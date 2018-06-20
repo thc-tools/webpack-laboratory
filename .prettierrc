@@ -1,0 +1,13 @@
+{
+    "tabWidth": 4,
+    "printWidth": 120,
+    "overrides": [
+        {
+            "files": ["package.json", "package-lock.json"],
+            "options": {
+                "printWidth": 50000,
+                "tabWidth": 2
+            }
+        }
+    ]
+}
