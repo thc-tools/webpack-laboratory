@@ -1,0 +1,33 @@
+{
+    "name": "@thc/webpack-react",
+    "version": "1.0.0",
+    "description": "Ready to use webpack conf for React",
+    "main": "index.js",
+    "scripts": {
+        "pre-release": "standard-version",
+        "pre-release-alpha": "standard-version --prerelease alpha",
+        "pre-release-beta": "standard-version --prerelease beta",
+        "release": "npm publish --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
+        "release-alpha": "npm publish --tag alpha --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
+        "release-beta": "npm publish --tag beta --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thc-tools/webpack-react.git"
+    },
+    "keywords": [
+        "thc",
+        "template"
+    ],
+    "author": "THC-Tools",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/thc-tools/webpack-react/issues"
+    },
+    "homepage": "https://github.com/thc-tools/webpack-react#readme",
+    "devDependencies": {
+        "conventional-github-releaser": "3.1.2",
+        "standard-version": "4.4.0"
+    }
+}
