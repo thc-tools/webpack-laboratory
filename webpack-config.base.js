@@ -1,9 +1,13 @@
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const envDefaults = require('./env-defaults');
+
 const config = {
     output: {
-        //path
-        //publicPAth
-        chunkFilename: 'chunks/[name]_[hash].js',
-        filename: '[name].[hash].bundle.js'
+        chunkFilename: 'chunks/[name]_[hash].js'
     },
     watchOptions: {
         ignored: /node_modules/
@@ -25,6 +29,12 @@ const config = {
     resolve: {
         extensions: ['js', 'jsx'],
     },
+    optimization: {
+        minimize: false //Babel is gonna do the minification
+    },
+    plugins: [
+        new CaseSensitivePathsPlugin()
+    ],
     module: {
         rules: [
             {
@@ -98,20 +108,51 @@ const config = {
     }
 };
 
-module.exports = (env, argv) => {
-
-    let nodeEnv = process.env.NODE_ENV;
-    if (nodeEnv !== 'development' && nodeEnv !== 'production') {
-        throw new Error(
-            'Using `@thc/babel-preset-react` requires that you specify `NODE_ENV` or ' +
-            '`BABEL_ENV` environment variables. Valid values are "development" and "production". Instead, received: ' +
-            JSON.stringify(env) +
-            '.'
-        );
-    }
+module.exports = (processEnv, argv) => {
+    const env = envDefaults(processEnv);
+    const nodeEnv = env.NODE_ENV;
 
     config.mode = nodeEnv;
     config.devtool = nodeEnv === 'development' ? 'cheap-eval-source-map' : 'none';
+    config.output.filename = `js/[name]_${env.npm_package_version}.bundle.js`;
+    config.output.path = env.OUTPUT_DIR;
+    config.output.publicPath = env.OUTPUT_PUBLIC_PATH;
 
+    config.plugins.push(new CleanWebpackPlugin(['js', 'misc', 'chunks', 'img', 'fonts', 'css'], { allowExternal: true, root: config.output.path }));
+    config.module.rules.push({
+        test: /\.css/,
+        use: [
+            {
+                loader: env.HOT_RELOAD === true ? 'style-loader' : MiniCssExtractPlugin.loader
+            },
+            {
+                loader: 'css-loader',
+                options: {
+                    minimize: false,
+                    importLoaders: 1,
+                }
+            },
+            {
+                loader: 'postcss-loader',
+                options: {
+                    // Other options should go into postcss.config.js
+                    config: {
+                        path: path.join(process.cwd(), 'postcss.config.js')
+                    }
+                }
+            }
+        ]
+    });
+
+    if (env.HOT_RELOAD === 'true') {
+        config.plugins.push(new HtmlWebpackPlugin());
+        config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    } else {
+        config.plugins.push(new MiniCssExtractPlugin({ filename: `css/[name]_${env.npm_package_version}.bundle.js`, chunkFilename: 'css/[name]_[hash].css' }))
+    }
+
+    if (env.ANALYZE === 'true') {
+        config.plugins.push(new BundleAnalyzerPlugin());
+    }
     return config;
 };
