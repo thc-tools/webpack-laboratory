@@ -15,3 +15,4 @@ const copyDefaultToWorkingDir = (filename) => {
 copyDefaultToWorkingDir('.browserlistrc');
 copyDefaultToWorkingDir('postcss.config.js');
 copyDefaultToWorkingDir('webpack.config.js');
+copyDefaultToWorkingDir('dev-server.js');
