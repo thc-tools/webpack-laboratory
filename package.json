@@ -27,6 +27,9 @@
         "url": "https://github.com/thc-tools/webpack-react/issues"
     },
     "homepage": "https://github.com/thc-tools/webpack-react#readme",
+    "peerDependencies": {
+        "@thc/babel-preset-react": "1.x"
+    },
     "devDependencies": {
         "conventional-github-releaser": "3.1.2",
         "standard-version": "4.4.0"
