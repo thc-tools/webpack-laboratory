@@ -9,7 +9,6 @@ module.exports = (processEnv, argv) => {
     // https://webpack.js.org/configuration/resolve/#resolve-modules
     // https://webpack.js.org/configuration/resolve/#resolve-alias
     // https://webpack.js.org/configuration/entry-context/#context
-    config.entry = config.entry || {};
     config.entry.main = './src/app.js';
 
     return config;

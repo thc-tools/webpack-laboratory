@@ -9,6 +9,9 @@ const config = {
     output: {
         chunkFilename: 'chunks/[name]_[hash].js'
     },
+    entry: {
+        polyfill: ['@babel/polyfill', /*Needed for Opera Mini*/'whatwg-fetch']
+    },
     watchOptions: {
         ignored: /node_modules/
     },
@@ -30,7 +33,10 @@ const config = {
         extensions: ['js', 'jsx'],
     },
     optimization: {
-        minimize: false //Babel is gonna do the minification
+        minimize: false, //Babel is gonna do the minification
+        splitChunks: {
+            chunks: 'all'
+        }
     },
     plugins: [
         new CaseSensitivePathsPlugin()
