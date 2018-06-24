@@ -120,6 +120,7 @@ module.exports = (processEnv, argv) => {
 
     config.mode = nodeEnv;
     config.devtool = nodeEnv === 'development' ? 'cheap-eval-source-map' : 'none';
+    config.bail = nodeEnv === 'production';
     config.output.filename = `js/[name]_${env.npm_package_version}.bundle.js`;
     config.output.path = env.OUTPUT_DIR;
     config.output.publicPath = env.OUTPUT_PUBLIC_PATH;
