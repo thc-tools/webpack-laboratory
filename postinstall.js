@@ -12,7 +12,11 @@ const copyDefaultToWorkingDir = (filename) => {
     }
 };
 
-copyDefaultToWorkingDir('.browserlistrc');
-copyDefaultToWorkingDir('postcss.config.js');
-copyDefaultToWorkingDir('webpack.config.js');
-copyDefaultToWorkingDir('dev-server.js');
+if (process.cwd() !== __dirname) {
+    copyDefaultToWorkingDir('.browserlistrc');
+    copyDefaultToWorkingDir('postcss.config.js');
+    copyDefaultToWorkingDir('webpack.config.js');
+    copyDefaultToWorkingDir('dev-server.js');
+} else {
+    console.log('Local folder, not copying script')
+}
