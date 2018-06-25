@@ -19,7 +19,7 @@ module.exports = (processEnv) => {
         );
     }
 
-    env.OUTPUT_DIR = path.resolve(process.cwd(), OUTPUT_DIR)
+    env.OUTPUT_DIR = path.resolve(process.cwd(), env.OUTPUT_DIR)
     env.HOT_RELOAD = env.HOT_RELOAD || 'false';
     env.ANALYZE = env.ANALYZE || 'false';
     env.OUTPUT_PUBLIC_PATH = env.OUTPUT_PUBLIC_PATH || '/';
@@ -29,7 +29,7 @@ module.exports = (processEnv) => {
         env.DEV_SERVER_HOST = env.DEV_SERVER_HOST || 'localhost';
         env.DEV_SERVER_PORT = env.DEV_SERVER_PORT || '3000';
         env.DEV_SERVER_SUBDOMAIN = env.DEV_SERVER_SUBDOMAIN || '';
-        env.OUTPUT_PUBLIC_PATH = `${newEnv.DEV_SERVER_PROTOCOL}://${newEnv.DEV_SERVER_HOST}:${newEnv.DEV_SERVER_PORT}/${newEnv.DEV_SERVER_SUBDOMAIN}`;
+        env.OUTPUT_PUBLIC_PATH = `${env.DEV_SERVER_PROTOCOL}://${env.DEV_SERVER_HOST}:${env.DEV_SERVER_PORT}/${env.DEV_SERVER_SUBDOMAIN}`;
     }
 
     return env;
