@@ -1,6 +1,6 @@
 {
     "name": "@thc/webpack-react",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Ready to use webpack conf for React",
     "main": "index.js",
     "scripts": {
@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/thc-tools/webpack-react#readme",
     "peerDependencies": {
-        "@thc/babel-preset-react": "1.x"
+        "@thc/babel-preset-react": "0.x"
     },
     "devDependencies": {
         "conventional-github-releaser": "3.1.2",
@@ -58,6 +58,7 @@
         "url-loader": "1.0.1",
         "webpack": "4.12.0",
         "webpack-bundle-analyzer": "2.13.1",
+        "webpack-cli": "3.0.8",
         "whatwg-fetch": "2.0.4"
     }
 }
