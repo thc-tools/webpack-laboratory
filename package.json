@@ -35,7 +35,7 @@
     "standard-version": "4.4.0"
   },
   "dependencies": {
-    "babel-loader": "7.1.4",
+    "babel-loader": "8.0.0-beta.4",
     "cache-loader": "1.2.2",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "clean-webpack-plugin": "0.1.19",
@@ -59,6 +59,7 @@
     "webpack": "4.12.0",
     "webpack-bundle-analyzer": "2.13.1",
     "webpack-cli": "3.0.8",
+    "webpack-dev-server": "3.1.4",
     "whatwg-fetch": "2.0.4"
   }
 }
