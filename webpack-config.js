@@ -31,7 +31,7 @@ const config = {
         warnings: true
     },
     resolve: {
-        extensions: ['js', 'jsx'],
+        extensions: ['.js', '.jsx'],
     },
     optimization: {
         minimize: false, //Babel is gonna do the minification
@@ -65,6 +65,7 @@ const config = {
             },*/
             {
                 exclude: [
+                    /\.html$/,
                     /\.(js|jsx)$/,
                     /\.css$/,
                     /\.json$/,
@@ -77,23 +78,8 @@ const config = {
                 }
             },
             {
-                test: /\.(js|jsx)$/,
-                use: [
-                    {
-                        loader: 'thread-loader'
-                    },
-                    {
-                        loader: 'cache-loader'
-                    },
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            cacheDirectory: false,
-                            presets: ['@thc/babel-preset-react'],
-                            //exclude: /node_modules/
-                        }
-                    }
-                ]
+                test: /\.html$/,
+                loader: 'html-loader'
             },
             {
                 test: /\.(ttf|eot|woff|woff2|svg)(\?.*)?$/,
@@ -128,6 +114,31 @@ module.exports = (processEnv, argv) => {
 
     config.plugins.push(new CleanWebpackPlugin(['js', 'misc', 'chunks', 'img', 'fonts', 'css'], { allowExternal: true, root: config.output.path }));
     config.module.rules.push({
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: [
+            {
+                loader: 'thread-loader'
+            },
+            {
+                loader: 'cache-loader'
+            },
+            {
+                loader: 'babel-loader',
+                options: {
+                    cacheDirectory: false,
+                    presets: [
+                        ['@thc/babel-preset-react', {
+                            development: nodeEnv === 'development',
+                            hot: env.HOT_RELOAD === 'true'
+                        }]
+                    ],
+                    babelrc: false
+                }
+            }
+        ]
+    });
+    config.module.rules.push({
         test: /\.css/,
         use: [
             {
@@ -153,7 +164,11 @@ module.exports = (processEnv, argv) => {
     });
 
     if (env.HOT_RELOAD === 'true') {
-        config.plugins.push(new HtmlWebpackPlugin());
+        config.plugins.push(new HtmlWebpackPlugin({
+            title: env.npm_package_name,
+            inject: 'head',
+            template: 'template.html'
+        }));
         config.plugins.push(new webpack.HotModuleReplacementPlugin());
     } else {
         config.plugins.push(new MiniCssExtractPlugin({ filename: `css/[name]_${env.npm_package_version}.bundle.js`, chunkFilename: 'css/[name]_[hash].css' }))

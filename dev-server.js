@@ -48,7 +48,7 @@ const defaultServerConfig = {
 module.exports = (webpackConfig, serverConfig = {}) => {
     // We attempt to use the default port but if it is busy, we offer the user to
     // run on a different port. `detect()` Promise resolves to the next free port.
-    choosePort(DEV_SERVER_HOST, DEV_SERVER_PORT)
+    choosePort(DEV_SERVER_HOST, +DEV_SERVER_PORT)
         .then(port => {
             if (port === null) {
                 // We have not found a port.

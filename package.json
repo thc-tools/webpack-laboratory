@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "conventional-github-releaser": "3.1.2",
+    "html-loader": "0.5.5",
     "standard-version": "4.4.0"
   },
   "dependencies": {

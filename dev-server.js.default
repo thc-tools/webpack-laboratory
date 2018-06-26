@@ -3,4 +3,4 @@ const webpackConf = require('./webpack.config.js');
 
 const customConfig = {};
 
-devServer(webpackConf, customConfig);
+devServer(webpackConf(process.env), customConfig);

@@ -17,6 +17,7 @@ if (process.cwd() !== __dirname) {
     copyDefaultToWorkingDir('postcss.config.js');
     copyDefaultToWorkingDir('webpack.config.js');
     copyDefaultToWorkingDir('dev-server.js');
+    copyDefaultToWorkingDir('template.html');
 } else {
     console.log('Local folder, not copying script')
 }
