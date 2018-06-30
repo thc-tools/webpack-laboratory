@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.3"></a>
+# [0.1.0-alpha.3](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.2...v0.1.0-alpha.3) (2018-06-30)
+
+
+### Bug Fixes
+
+* html-loader should be a dependency ([ef413b9](https://github.com/thc-tools/webpack-react/commit/ef413b9))
+* Trying new detection for localDir ([b2d74e3](https://github.com/thc-tools/webpack-react/commit/b2d74e3))
+* webpack should be required ([81c8a20](https://github.com/thc-tools/webpack-react/commit/81c8a20))
+* Wrong import in postcss.config.js.default ([ed85d7f](https://github.com/thc-tools/webpack-react/commit/ed85d7f))
+
+
+
 <a name="0.1.0-alpha.2"></a>
 # [0.1.0-alpha.2](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2018-06-26)
 
