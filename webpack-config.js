@@ -66,7 +66,6 @@ const config = {
             },*/
             {
                 exclude: [
-                    /\.html$/,
                     /\.(js|jsx)$/,
                     /\.css$/,
                     /\.json$/,
@@ -77,10 +76,6 @@ const config = {
                 options: {
                     name: 'misc/[name]_[sha512:hash:base64:7].[ext]'
                 }
-            },
-            {
-                test: /\.html$/,
-                loader: 'html-loader'
             },
             {
                 test: /\.(ttf|eot|woff|woff2|svg)(\?.*)?$/,
@@ -143,7 +138,7 @@ module.exports = (processEnv, argv) => {
         test: /\.css/,
         use: [
             {
-                loader: env.HOT_RELOAD === true ? 'style-loader' : MiniCssExtractPlugin.loader
+                loader: env.HOT_RELOAD === 'true' ? 'style-loader' : MiniCssExtractPlugin.loader
             },
             {
                 loader: 'css-loader',
@@ -165,12 +160,14 @@ module.exports = (processEnv, argv) => {
     });
 
     if (env.HOT_RELOAD === 'true') {
-        config.plugins.push(new HtmlWebpackPlugin({
-            title: env.npm_package_name,
-            inject: 'head',
-            template: 'template.html'
-        }));
         config.plugins.push(new webpack.HotModuleReplacementPlugin());
+        config.plugins.push(new HtmlWebpackPlugin({
+            inject: 'head',
+            template: 'template.ejs',
+            templateParameters: {
+                title: env.npm_package_name,
+            }
+        }));
     } else {
         config.plugins.push(new MiniCssExtractPlugin({ filename: `css/[name]_${env.npm_package_version}.bundle.js`, chunkFilename: 'css/[name]_[hash].css' }))
     }
@@ -178,5 +175,6 @@ module.exports = (processEnv, argv) => {
     if (env.ANALYZE === 'true') {
         config.plugins.push(new BundleAnalyzerPlugin());
     }
+
     return config;
 };
