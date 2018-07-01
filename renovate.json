@@ -3,7 +3,6 @@
   "separateMinorPatch": true,
   "rebaseStalePrs": true,
   "semanticCommits": true,
-  "recreateClosed": true,
   "semanticCommitType": "chore",
   "extends": [
     "config:base"
