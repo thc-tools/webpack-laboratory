@@ -1,4 +1,15 @@
 {
+  "assignees": ["c3dr0x", "Hartorn"],
+  "major": {
+    "labels": ["dep:major"]
+  },
+  "minor": {
+    "labels": ["dep:minor"]
+  },
+  "patch": {
+    "labels": ["dep:patch"]
+  },
+  "labels" : ["dependencies"],
   "extends": [
     "config:base"
   ]
