@@ -3,6 +3,11 @@
   "separateMinorPatch": true,
   "rebaseStalePrs": true,
   "semanticCommits": true,
+  "recreateClosed": true,
+  "semanticCommitType": "chore",
+  "extends": [
+    "config:base"
+  ],
   "major": {
     "semanticCommitType": "feat",
     "labels": ["dependencies", "dep:major"]
@@ -14,8 +19,5 @@
   "patch": {
     "semanticCommitType": "chore",
     "labels": ["dependencies", "dep:patch"]
-  },
-  "extends": [
-    "config:base"
-  ]
+  }
 }
