@@ -1,16 +1,20 @@
 {
   "assignees": ["c3dr0x", "Hartorn"],
-  "rebaseStalePrs":true,
+  "separateMinorPatch": true,
+  "rebaseStalePrs": true,
+  "semanticCommits": true,
   "major": {
-    "labels": ["dep:major"]
+    "semanticCommitType": "feat",
+    "labels": ["dependencies", "dep:major"]
   },
   "minor": {
-    "labels": ["dep:minor"]
+    "semanticCommitType": "fix",
+    "labels": ["dependencies", "dep:minor"]
   },
   "patch": {
-    "labels": ["dep:patch"]
+    "semanticCommitType": "chore",
+    "labels": ["dependencies", "dep:patch"]
   },
-  "labels" : ["dependencies"],
   "extends": [
     "config:base"
   ]
