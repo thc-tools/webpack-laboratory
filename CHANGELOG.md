@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.5"></a>
+# [0.1.0-alpha.5](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2018-07-01)
+
+
+### Bug Fixes
+
+* Mutiple fixes ([fedc6c8](https://github.com/thc-tools/webpack-react/commit/fedc6c8))
+
+
+
 <a name="0.1.0-alpha.4"></a>
 # [0.1.0-alpha.4](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.3...v0.1.0-alpha.4) (2018-07-01)
 
