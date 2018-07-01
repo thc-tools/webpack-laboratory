@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.6"></a>
+# [0.1.0-alpha.6](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.5...v0.1.0-alpha.6) (2018-07-01)
+
+
+### Bug Fixes
+
+* Fix minimizer, fix production build ([b3f0df7](https://github.com/thc-tools/webpack-react/commit/b3f0df7))
+
+
+
 <a name="0.1.0-alpha.5"></a>
 # [0.1.0-alpha.5](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.4...v0.1.0-alpha.5) (2018-07-01)
 
