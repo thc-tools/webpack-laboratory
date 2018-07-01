@@ -1,4 +1,5 @@
-const configFunc = require('@thc/webpack-react/webpack-config');
+const configFunc = require('@thc/webpack-react/lib/webpack-config');
+const {prepareEntries} = require('@thc/webpack-react/lib/utils');
 //const path = require('path');
 
 module.exports = (processEnv, argv) => {
@@ -9,7 +10,7 @@ module.exports = (processEnv, argv) => {
     // https://webpack.js.org/configuration/resolve/#resolve-modules
     // https://webpack.js.org/configuration/resolve/#resolve-alias
     // https://webpack.js.org/configuration/entry-context/#context
-    config.entry.main = './src/app.js';
+    config.entry.main = prepareEntries(processEnv, ['./src/app.js']);
 
     return config;
 };
