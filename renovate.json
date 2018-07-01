@@ -1,5 +1,6 @@
 {
   "assignees": ["c3dr0x", "Hartorn"],
+  "rebaseStalePrs":true,
   "major": {
     "labels": ["dep:major"]
   },
