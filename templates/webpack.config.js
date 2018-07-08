@@ -1,17 +1,46 @@
-const configFunc = require("@thc/webpack-react/lib/webpack-config");
-const { prepareEntries } = require("@thc/webpack-react/lib/utils");
-//const path = require('path');
+const {
+    handleAssets,
+    handleJs,
+    handleCss,
+    emptyConf,
+    configEntries,
+    addHotReload,
+    addHtmlIndex,
+    miscOptions,
+    optimize,
+    configOutput,
+    generateSourcemap,
+    utilities
+} = require("@thc/webpack-react/lib/blocks");
+
+const { envDefaults } = require("@thc/webpack-react/lib/utils");
 
 module.exports = (processEnv, argv) => {
-    const env = processEnv || process.env;
-    const config = configFunc(env, argv);
+    const env = envDefaults(processEnv);
+    // Every function accepts a config object
+    // Object is gonna be shallow merged with default conf
+    const configFunctions = [
+        emptyConf(), // Must be first
+        handleJs(),
+        handleCss(),
+        handleAssets(),
+        configEntries(), //Default entry object is : { main : "./src/app.js" }
+        addHotReload(),
+        addHtmlIndex(),
+        miscOptions(),
+        optimize(),
+        configOutput(),
+        generateSourcemap(),
+        utilities() // Must be after output => depends on config.output.path
+    ];
 
-    // Add your entries and anything else needed
-    // https://webpack.js.org/configuration/entry-context/#entry
-    // https://webpack.js.org/configuration/resolve/#resolve-modules
-    // https://webpack.js.org/configuration/resolve/#resolve-alias
-    // https://webpack.js.org/configuration/entry-context/#context
-    config.entry.main = prepareEntries(env, ["./src/app.js"]);
+    const config = configFunctions
+        .filter(Boolean) // Allow simple filtering, by setting the function as test && config()
+        .map(confFunc => confFunc(env, argv)) // We bind our env, defaulted with some values
+        .reduce((conf, elt) => conf(elt), {});
+
+    // The idea is that we could replace emptyConf, with an existing webpack config function
+    // or a lambda returning a pre-initialized object
 
     return config;
 };
