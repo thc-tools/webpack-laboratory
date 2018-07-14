@@ -13,14 +13,16 @@ const {
     utilities
 } = require("@thc/webpack-react/lib/blocks");
 
-const { envDefaults } = require("@thc/webpack-react/lib/utils");
+const { envDefaults, createConfigurator } = require("@thc/webpack-react/lib/utils");
 
 module.exports = (processEnv, argv) => {
     const env = envDefaults(processEnv);
     // Every function accepts a config object
     // Object is gonna be shallow merged with default conf
-    const configFunctions = [
-        emptyConf(), // Must be first
+    // Allow simple filtering, by setting the function as booleanTest && config()
+    const configurator = createConfigurator(
+        env,
+        argv,
         handleJs(),
         handleCss(),
         handleAssets(),
@@ -31,16 +33,11 @@ module.exports = (processEnv, argv) => {
         optimize(),
         configOutput(),
         generateSourcemap(),
-        utilities() // Must be after output => depends on config.output.path
-    ];
+        utilities()
+    );
 
-    const config = configFunctions
-        .filter(Boolean) // Allow simple filtering, by setting the function as test && config()
-        .map(confFunc => confFunc(env, argv)) // We bind our env, defaulted with some values
-        .reduce((conf, elt) => conf(elt), {});
-
-    // The idea is that we could replace emptyConf, with an existing webpack config function
-    // or a lambda returning a pre-initialized object
-
-    return config;
+    // Configurator can take a already built object config to complete
+    // const config = { module: { rules: [ test:'lol', loader:'example']}};
+    // return configurator(config);
+    return configurator();
 };
