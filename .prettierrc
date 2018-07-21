@@ -3,9 +3,10 @@
     "printWidth": 120,
     "overrides": [
         {
-            "files": ["package.json", "package-lock.json", "app/model/**", "app/services/**"],
+            "files": ["package.json", "package-lock.json"],
             "options": {
-                "printWidth": 50000
+                "printWidth": 50000,
+                "tabWidth": 2
             }
         }
     ]
