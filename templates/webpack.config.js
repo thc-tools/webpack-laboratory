@@ -21,8 +21,9 @@ module.exports = (processEnv, argv) => {
     // Object is gonna be shallow merged with default conf
     // Allow simple filtering, by setting the function as booleanTest && config()
     const configurator = createConfigurator(
-        env,
-        argv,
+        env, // Environnement variables (used for default values)
+        argv, // Argv options given to webpack (not used for now, only for respecting webpack format)
+        // List of blocks
         handleJs(),
         handleCss(),
         handleAssets(),
