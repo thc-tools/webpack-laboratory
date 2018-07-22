@@ -1,17 +1,44 @@
-const configFunc = require("@thc/webpack-react/lib/webpack-config");
-const { prepareEntries } = require("@thc/webpack-react/lib/utils");
-//const path = require('path');
+const {
+    handleAssets,
+    handleJs,
+    handleCss,
+    emptyConf,
+    configEntries,
+    addHotReload,
+    addHtmlIndex,
+    miscOptions,
+    optimize,
+    configOutput,
+    generateSourcemap,
+    utilities
+} = require("@thc/webpack-react/lib/blocks");
+
+const { envDefaults, createConfigurator } = require("@thc/webpack-react/lib/utils");
 
 module.exports = (processEnv, argv) => {
-    const env = processEnv || process.env;
-    const config = configFunc(env, argv);
+    const env = envDefaults(processEnv);
+    // Every function accepts a config object
+    // Object is gonna be shallow merged with default conf
+    // Allow simple filtering, by setting the function as booleanTest && config()
+    const configurator = createConfigurator(
+        env, // Environnement variables (used for default values)
+        argv, // Argv options given to webpack (not used for now, only for respecting webpack format)
+        // List of blocks
+        handleJs(),
+        handleCss(),
+        handleAssets(),
+        configEntries(), //Default entry object is : { main : "./src/app.js" }
+        addHotReload(),
+        addHtmlIndex(),
+        miscOptions(),
+        optimize(),
+        configOutput(),
+        generateSourcemap(),
+        utilities()
+    );
 
-    // Add your entries and anything else needed
-    // https://webpack.js.org/configuration/entry-context/#entry
-    // https://webpack.js.org/configuration/resolve/#resolve-modules
-    // https://webpack.js.org/configuration/resolve/#resolve-alias
-    // https://webpack.js.org/configuration/entry-context/#context
-    config.entry.main = prepareEntries(env, ["./src/app.js"]);
-
-    return config;
+    // Configurator can take a already built object config to complete
+    // const config = { module: { rules: [ test:'lol', loader:'example']}};
+    // return configurator(config);
+    return configurator();
 };

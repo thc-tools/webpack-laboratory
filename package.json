@@ -9,7 +9,7 @@
     "release": "npm publish --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
     "release-alpha": "npm publish --tag alpha --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
     "release-beta": "npm publish --tag beta --access public && conventional-github-releaser -p angular && git push --follow-tags origin master",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --runInBand --no-cache",
     "postinstall": "node ./postinstall.js"
   },
   "repository": {
@@ -27,12 +27,14 @@
   },
   "homepage": "https://github.com/thc-tools/webpack-react#readme",
   "peerDependencies": {
-    "@thc/babel-preset-react": "0.x",
+    "@thc/babel-preset-react": "0.1.0-alpha.*",
     "webpack": "4.x"
   },
   "devDependencies": {
     "conventional-github-releaser": "3.1.2",
-    "standard-version": "4.4.0"
+    "jest": "23.4.1",
+    "standard-version": "4.4.0",
+    "webpack": "4.16.1"
   },
   "dependencies": {
     "babel-loader": "8.0.0-beta.4",
