@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.7"></a>
+# [0.1.0-alpha.7](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.6...v0.1.0-alpha.7) (2018-07-22)
+
+
+### Bug Fixes
+
+* Fix minimizer, fix production build ([b3f0df7](https://github.com/thc-tools/webpack-react/commit/b3f0df7))
+
+
+### Features
+
+* Add renovate.json ([#1](https://github.com/thc-tools/webpack-react/issues/1)) ([9ee1274](https://github.com/thc-tools/webpack-react/commit/9ee1274))
+* Refactoring cong with separate block functions ([692d3f2](https://github.com/thc-tools/webpack-react/commit/692d3f2))
+
+
+
 <a name="0.1.0-alpha.6"></a>
 # [0.1.0-alpha.6](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.5...v0.1.0-alpha.6) (2018-07-01)
 
