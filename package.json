@@ -57,6 +57,7 @@
     "postcss-normalize": "6.0.0",
     "postcss-preset-env": "5.2.1",
     "react-dev-utils": "5.0.1",
+    "sass-loader": "7.0.3",
     "source-map-loader": "0.2.3",
     "style-loader": "0.21.0",
     "thread-loader": "1.1.5",
