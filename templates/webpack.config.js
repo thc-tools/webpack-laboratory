@@ -2,7 +2,6 @@ const {
     handleAssets,
     handleJs,
     handleCss,
-    emptyConf,
     configEntries,
     addHotReload,
     addHtmlIndex,
