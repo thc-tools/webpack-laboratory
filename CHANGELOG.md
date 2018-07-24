@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0-alpha.9"></a>
+# [0.1.0-alpha.9](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.8...v0.1.0-alpha.9) (2018-07-24)
+
+
+### Bug Fixes
+
+* Removing leftover variable, fixing template parameters in html block ([28c5000](https://github.com/thc-tools/webpack-react/commit/28c5000))
+
+
+
 <a name="0.1.0-alpha.8"></a>
 # [0.1.0-alpha.8](https://github.com/thc-tools/webpack-react/compare/v0.1.0-alpha.7...v0.1.0-alpha.8) (2018-07-22)
 
