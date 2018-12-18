@@ -1,0 +1,40 @@
+{
+    "name": "@thc/webpack-quark-entry",
+    "version": "1.0.0",
+    "description": "Basic webpack block to handle entries",
+    "keywords": [
+        "thc-tools",
+        "webpack",
+        "entry"
+    ],
+    "author": "Hartorn <bazirehoussin@gmail.com>",
+    "homepage": "https://github.com/thc-tools/webpack-react/tree/master/packages/quarks/webpack-quark-entry#readme",
+    "license": "MIT",
+    "main": "lib/entry.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thc-tools/webpack-react.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/thc-tools/webpack-react/issues"
+    },
+    "dependencies": {
+        "@thc/webpack-chemistry": "1.0.0-alpha.1"
+    },
+    "peerDependencies": {
+        "webpack": "^4.0.0"
+    }
+}
