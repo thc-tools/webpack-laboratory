@@ -11,9 +11,12 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
     };
 
     const defaultUglifyConf = {
+        // TODO rework, to have both plugin options AND uglify options
+        /*parallel: true, 
+        extractComments: true,*/
         compress: {
             drop_console: true,
-            ecma: 6,
+            // ecma: 6,
             passes: 2
         }
     };
