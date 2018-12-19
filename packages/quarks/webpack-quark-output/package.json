@@ -1,6 +1,6 @@
 {
     "name": "@thc/webpack-quark-output",
-    "version": "1.0.0",
+    "version": "1.0.0-beta.0",
     "description": "Basic webpack block to handle ouput from webpack",
     "keywords": [
         "webpack",

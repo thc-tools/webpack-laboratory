@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-utility",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "Basic webpack block for various utilities",
   "keywords": [
     "webpack",
@@ -35,7 +35,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0",
+    "@thc/webpack-chemistry": "1.0.0-beta.0",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "clean-webpack-plugin": "0.1.19",
     "webpack-bundle-analyzer": "3.0.3"

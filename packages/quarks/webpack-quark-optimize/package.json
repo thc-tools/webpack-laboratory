@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-optimize",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "Basic webpack block to handle optimization",
   "keywords": [
     "webpack",
@@ -35,7 +35,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0",
+    "@thc/webpack-chemistry": "1.0.0-beta.0",
     "uglifyjs-webpack-plugin": "2.0.1"
   }
 }

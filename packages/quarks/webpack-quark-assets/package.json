@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-assets",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "Basic webpack block to handle assets",
   "keywords": [
     "thc-tools",
@@ -35,7 +35,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0",
+    "@thc/webpack-chemistry": "1.0.0-beta.0",
     "file-loader": "2.0.0",
     "url-loader": "1.1.2"
   }

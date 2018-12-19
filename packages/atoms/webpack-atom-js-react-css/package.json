@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-atom-js-react-css",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "Ready to use webpack configuration, for React and CSS project",
   "keywords": [
     "react",
@@ -37,29 +37,29 @@
     "access": "public"
   },
   "dependencies": {
-    "webpack": "4.27.1",
     "@thc/babel-preset-react": "0.1.0-alpha.7",
-    "@thc/webpack-chemistry": "1.0.0",
-    "@thc/webpack-quark-assets": "1.0.0",
-    "@thc/webpack-quark-babel": "1.0.0",
-    "@thc/webpack-quark-css": "1.0.0",
-    "@thc/webpack-quark-entry": "1.0.0",
-    "@thc/webpack-quark-hot-reload": "1.0.0",
-    "@thc/webpack-quark-html": "1.0.0",
-    "@thc/webpack-quark-misc": "1.0.0",
-    "@thc/webpack-quark-optimize": "1.0.0",
-    "@thc/webpack-quark-output": "1.0.0",
-    "@thc/webpack-quark-sourcemap": "1.0.0",
-    "@thc/webpack-quark-utility": "1.0.0",
+    "@thc/webpack-chemistry": "1.0.0-beta.0",
+    "@thc/webpack-quark-assets": "1.0.0-beta.0",
+    "@thc/webpack-quark-babel": "1.0.0-beta.0",
+    "@thc/webpack-quark-css": "1.0.0-beta.0",
+    "@thc/webpack-quark-entry": "1.0.0-beta.0",
+    "@thc/webpack-quark-hot-reload": "1.0.0-beta.0",
+    "@thc/webpack-quark-html": "1.0.0-beta.0",
+    "@thc/webpack-quark-misc": "1.0.0-beta.0",
+    "@thc/webpack-quark-optimize": "1.0.0-beta.0",
+    "@thc/webpack-quark-output": "1.0.0-beta.0",
+    "@thc/webpack-quark-sourcemap": "1.0.0-beta.0",
+    "@thc/webpack-quark-utility": "1.0.0-beta.0",
+    "cssnano": "4.1.7",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-import": "12.0.1",
     "postcss-mixins": "6.2.0",
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.4.0",
-    "cssnano": "4.1.7",
-    "whatwg-fetch": "3.0.0",
+    "react-dev-utils": "6.1.1",
+    "webpack": "4.27.1",
     "webpack-cli": "3.1.2",
     "webpack-dev-server": "3.1.10",
-    "react-dev-utils": "6.1.1"
+    "whatwg-fetch": "3.0.0"
   }
 }
