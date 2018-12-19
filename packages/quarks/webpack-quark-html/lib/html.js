@@ -4,7 +4,6 @@ const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = blockConfig => (processEnv, argv) => argConfig => {
-
     const defaultConf = {
         template: "template.ejs",
         templateParameters: {
@@ -17,7 +16,7 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     config.plugins.push(
         new HtmlWebpackPlugin({
-            inject: "head",
+            inject: "body",
             template: mergedConf.template,
             templateParameters: mergedConf.templateParameters
         })
