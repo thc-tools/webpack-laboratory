@@ -3,7 +3,6 @@ const { ensureConfig, deduplicate, safeMerge } = require("@thc/webpack-chemistry
 const { cpus } = require("os");
 
 module.exports = blockConfig => (processEnv, argv) => argConfig => {
-
     const defaultBabelOptions = {
         babelrc: true
     };
@@ -27,10 +26,13 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
         test: mergedBlockConf.test,
         exclude: mergedBlockConf.exclude,
         use: [
-            mergedBlockConf.nbWorkers && mergedBlockConf.nbWorkers > 1 && {
-                loader: "thread-loader",
-                workers: mergedBlockConf.nbWorkers,
-            },
+            mergedBlockConf.nbWorkers &&
+                mergedBlockConf.nbWorkers > 1 && {
+                    loader: "thread-loader",
+                    options: {
+                        workers: mergedBlockConf.nbWorkers
+                    }
+                },
             mergedBlockConf.useCache && {
                 loader: "cache-loader"
             },
@@ -42,8 +44,7 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
                 }
             },
             ...mergedBlockConf.additionalLoaders
-        ]
-            .filter(Boolean)
+        ].filter(Boolean)
     });
 
     config.resolve.extensions = deduplicate(config.resolve.extensions, mergedBlockConf.extensions);
