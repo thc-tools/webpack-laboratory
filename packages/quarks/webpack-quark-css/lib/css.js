@@ -8,6 +8,7 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
     const config = ensureConfig(argConfig);
 
     const defaultCssConfig = {
+        test: /\.css$/,
         extractCss: false, //processEnv.HOT_RELOAD !== "true",
         filename: `css/[name]_${processEnv.npm_package_version}.bundle.css`, //`css/[name]_${processEnv.npm_package_version}.bundle.css`,
         chunkFilename: "css/[name]_[hash].css"
