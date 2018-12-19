@@ -9,7 +9,7 @@ const { choosePort, createCompiler, prepareUrls } = require("react-dev-utils/Web
 
 const chalk = require("chalk");
 
-const { envDefaults } = require("./utils");
+const { envDefaults } = require("@thc/webpack-chemistry");
 
 // Environment settings
 const parsedEnv = envDefaults(process.env);
