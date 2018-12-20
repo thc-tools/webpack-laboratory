@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- lts/*
+- node
+branches:
+  only:
+  - master
+  - develop
+install:
+- npm ci
+- npm run bootstrap
+script:
+- npm run test
+notifications:
+  slack:
+    secure: jlWjBA6CulRr8Hq02Nc6DR83btq3eD/SxLwbpJ5ybITwk7GjICe9h3cA0JbOzsPSQqLLlOQvQ++EKY1hHfgPhwxfql967qHTw177+WcxCm/uKcG1/hlUL6EBTuyYD41znFi3M2clOJNykD2UZqdivJPlFvwBDgJGl7DT0+8RAseuaVrkTjcM+DQbRU8BCJFCEolUeBngfYpMQ42EGJW/lhPaJIyOZ6lP+HnvZik90mnBt/VFH5s6Nj4xhvjMz+jfZeLCg3v5LrNBO/rZwx1fPrjnOh7oU3Zef6+x38vCBY1EZbHrG+zNxao0xbHy1qaya2muLsQM6/O5+r0CiVVmAZxLs+epuX6ry+ih9j+MEsedRvf3j1HevsEKMdJlrUtUV5U/8MrSf15roPzEmG+iEfMkY8lEmoHU7JrI8rv8LFJC9nUNrjjDKyryveVz/urPi7s7K4xyma6vS+gsb17xuTd4lWMCVh4cD9QwWu//JpcwcgEgbTAvUaCnEsyxOKorLS4OCzaR192JZFx8Vupl1eWUuEgmxXdxqEJLIQHmDx0rZHM2YfOjbesgF/T/tTpRss5yTDC4NipDGS0h9aa8pqMecdyex0vvtp5XQAzqPZEkrs9A2ROgusGwJI8URKf4fOW0tH4tghMCRa9BbjGY/P7g/BM/jsLYPJlLSm4PAy4=

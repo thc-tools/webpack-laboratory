@@ -4,7 +4,7 @@
   "description": "Ready to use webpack conf for React",
   "scripts": {
     "lerna": "./node_modules/.bin/lerna",
-    "bootstrap": "npm run lerna -- bootstrap",
+    "bootstrap": "npm run lerna -- bootstrap --no-ci",
     "test": "jest --runInBand --no-cache",
     "postpublish-test": "conventional-github-releaser -p angular",
     "push-tags": "git push --follow-tags origin master",
