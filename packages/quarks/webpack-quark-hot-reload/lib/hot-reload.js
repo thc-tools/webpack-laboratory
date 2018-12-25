@@ -26,8 +26,8 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     if (mergedConf.hot) {
         config.plugins.push(new webpack.HotModuleReplacementPlugin());
-        config.plugins.push(new webpack.DefinePlugin(mergedConf.serverConfig));
     }
+    config.plugins.push(new webpack.DefinePlugin(mergedConf.serverConfig));
 
     return config;
 };

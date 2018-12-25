@@ -14,8 +14,8 @@ describe("The hot reload block", () => {
         beforeEach(() => {
             config = handleHot({ hot: false })({}, {})();
         });
-        it("should not have setup plugins", () => {
-            expect(config.plugins.length).toBe(0);
+        it("should have setup Define plugin", () => {
+            expect(config.plugins.length).toBe(1);
         });
     });
 });
