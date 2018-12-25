@@ -1,22 +1,17 @@
 {
-    "packages": [
-        "packages/quarks/*",
-        "packages/atoms/*",
-        "packages/webpack-chemistry"
-    ],
+    "packages": ["packages/quarks/*", "packages/atoms/*", "packages/webpack-chemistry"],
     "version": "independent",
     "command": {
         "init": {
             "exact": true
         },
         "bootstrap": {
-            "npmClientArgs": [
-                "--no-package-lock"
-            ]
+            "npmClientArgs": ["--no-package-lock"]
         },
         "command": {
-            "publish": {
-                "conventionalCommits": true
+            "version": {
+                "conventionalCommits": true,
+                "message": "chore(release): publish"
             }
         }
     }

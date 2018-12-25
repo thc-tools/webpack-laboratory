@@ -6,9 +6,11 @@
     "lerna": "./node_modules/.bin/lerna",
     "bootstrap": "npm run lerna -- bootstrap --no-ci",
     "test": "jest --runInBand --no-cache",
-    "postpublish-test": "conventional-github-releaser -p angular",
     "push-tags": "git push --follow-tags origin master",
-    "release-lerna": "npm run lerna -- version 1.0.0-beta.0 --conventional-commits --no-push prepatch --preid beta --exact"
+    "beta-pre-release-lerna": "npm run lerna -- version --no-push prepatch --preid beta --exact",
+    "pre-release-lerna": "npm run lerna -- version --no-push --exact",
+    "beta-release-lerna": "npm run lerna -- publish from-git --npm-tag beta",
+    "release-lerna": "npm run lerna -- publish from-git"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,8 @@
   },
   "keywords": [
     "thc",
-    "template"
+    "webpack",
+    "configuration"
   ],
   "author": "THC-Tools",
   "license": "MIT",
@@ -25,10 +28,8 @@
   },
   "homepage": "https://github.com/thc-tools/webpack-react#readme",
   "devDependencies": {
-    "conventional-github-releaser": "3.1.2",
     "jest": "23.6.0",
     "lerna": "3.6.0",
-    "standard-version": "4.4.0",
     "webpack": "4.27.1"
   }
 }
