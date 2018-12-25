@@ -11,7 +11,8 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
         test: /\.css$/,
         extractCss: false, //processEnv.HOT_RELOAD !== "true",
         filename: `css/[name]_${processEnv.npm_package_version}.bundle.css`, //`css/[name]_${processEnv.npm_package_version}.bundle.css`,
-        chunkFilename: "css/[name]_[hash].css"
+        chunkFilename: "css/[name]_[hash].css",
+        cssLoaderOptions: {}
     };
 
     const mergedCssBlockConf = safeMerge(defaultCssConfig, blockConfig);
@@ -30,7 +31,8 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
             {
                 loader: "css-loader",
                 options: {
-                    importLoaders: nbLoaders
+                    importLoaders: nbLoaders,
+                    ...mergedCssBlockConf.cssLoaderOptions
                 }
             },
             {
