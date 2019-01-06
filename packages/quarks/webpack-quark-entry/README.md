@@ -5,7 +5,7 @@ It exposes special care for polyfill and entry enhancing capabilities.
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-entry`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-entry`
 
 Example in `webpack.config.js` :
 
@@ -34,7 +34,7 @@ module.exports = (processEnv, argv) => {
 
 | property | type                 | required | default | description                                                         |
 | -------- | -------------------- | -------- | ------- | ------------------------------------------------------------------- |
-| entries  | object               | x        |         | A key/value object containing entries point                        |
+| entries  | object               | x        |         | A key/value object containing entries point                         |
 | polyfill | string[]             |          |         | A special entry point for polyfills                                 |
 | enhance  | (string) => string[] |          |         | An enhancer function to complete entries, eg: usefull for hotreload |
 

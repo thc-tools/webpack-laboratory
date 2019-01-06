@@ -7,7 +7,7 @@ In addition if you set the `extractCss` option to `true` it will extract the css
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-css`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-css`
 
 Example in `webpack.config.js` :
 
@@ -36,7 +36,7 @@ module.exports = (processEnv, argv) => {
 | chunkFilename     | string[] |          | `css/[name]_[hash].css`                                   | pattern to generate chunk filename                                                                                                           |
 | postcssConfig     | object   |          |                                                           | additionnal configuration for `postcss`                                                                                                      |
 | cssConfig         | object   |          |                                                           | additionnal configuration for `css-loader`                                                                                                   |
-| additionalLoaders | object   |          |                                                           | additionanl loader, see [@thc/webpack-quark-scss](https://github.com/thc-tools/webpack-react/tree/master/packages/quarks/webpack-quark-scss) |
+| additionalLoaders | object   |          |                                                           | additionanl loader, see [@thc/webpack-quark-scss](https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-scss) |
 
 ## References
 

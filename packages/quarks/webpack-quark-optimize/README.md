@@ -4,7 +4,7 @@ This quarks intends to handle tranformation to the output that are used for prod
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-optimize`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-optimize`
 
 Example in `webpack.config.js` :
 

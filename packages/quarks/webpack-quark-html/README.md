@@ -8,7 +8,7 @@ It is the template that will be use to generate the `index.html` file.
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-html`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-html`
 
 Example in `webpack.config.js` :
 

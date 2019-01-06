@@ -8,7 +8,7 @@ Whereas images and fonts will be inlined if under 1000 bytes or put in respectiv
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-assets`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-assets`
 
 Example in `webpack.config.js` :
 

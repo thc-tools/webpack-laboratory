@@ -6,7 +6,7 @@ It can be easily extended to handle framework like React (see [Recipes](#recipes
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-babel`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-babel`
 
 Example in `webpack.config.js` :
 
@@ -35,7 +35,7 @@ module.exports = (processEnv, argv) => {
 | extensions        | string[] |          | `[".js"]`         | list of extensions handled by loader                                                                                                                               |
 | babelOptions      | object   |          | `{babelrc: true}` | options for babel                                                                                                                                                  |
 | nbWorkers         | number   |          |                   | number of workers to use                                                                                                                                           |
-| additionalLoaders | object[] |          | []                | any additional loader to use, see [@thc/webpack-quark-typescript](https://github.com/thc-tools/webpack-react/tree/master/packages/quarks/webpack-quark-typescript) |
+| additionalLoaders | object[] |          | []                | any additional loader to use, see [@thc/webpack-quark-typescript](https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-typescript) |
 
 ## Recipes
 

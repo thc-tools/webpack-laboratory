@@ -4,7 +4,7 @@ This quarks intends to help with using hot reload
 
 ## Usage
 
-Just install it : `npm i --save-dev --save-exact @thc/webpack-react @thc/webpack-quark-dev-server`
+Just install it : `npm i --save-dev --save-exact @thc/webpack-chemistry @thc/webpack-quark-dev-server`
 
 Example in `webpack.config.js` :
 
