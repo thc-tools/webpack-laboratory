@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0-beta.0",
-    "babel-loader": "8.0.4",
+    "babel-loader": "8.0.5",
     "cache-loader": "1.2.5",
     "thread-loader": "1.2.0"
   }
