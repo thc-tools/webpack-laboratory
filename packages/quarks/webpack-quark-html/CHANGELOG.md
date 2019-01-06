@@ -8,13 +8,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-html:** fixes list of published files ([52b5375](https://github.com/thc-tools/webpack-react/commit/52b5375))
-* **webpack-quark-html:** injecting scripts into body, to avoid react overlay error ([41de45d](https://github.com/thc-tools/webpack-react/commit/41de45d))
+* **webpack-quark-html:** fixes list of published files ([52b5375](https://github.com/thc-tools/webpack-laboratory/commit/52b5375))
+* **webpack-quark-html:** injecting scripts into body, to avoid react overlay error ([41de45d](https://github.com/thc-tools/webpack-laboratory/commit/41de45d))
 
 
 ### Features
 
-* **webpack-quark-html:** Creating quark package to create html index referencing js,css, ... ([2f61139](https://github.com/thc-tools/webpack-react/commit/2f61139))
+* **webpack-quark-html:** Creating quark package to create html index referencing js,css, ... ([2f61139](https://github.com/thc-tools/webpack-laboratory/commit/2f61139))
 
 
 
@@ -25,10 +25,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-html:** fixes list of published files ([52b5375](https://github.com/thc-tools/webpack-react/commit/52b5375))
-* **webpack-quark-html:** injecting scripts into body, to avoid react overlay error ([41de45d](https://github.com/thc-tools/webpack-react/commit/41de45d))
+* **webpack-quark-html:** fixes list of published files ([52b5375](https://github.com/thc-tools/webpack-laboratory/commit/52b5375))
+* **webpack-quark-html:** injecting scripts into body, to avoid react overlay error ([41de45d](https://github.com/thc-tools/webpack-laboratory/commit/41de45d))
 
 
 ### Features
 
-* **webpack-quark-html:** Creating quark package to create html index referencing js,css, ... ([2f61139](https://github.com/thc-tools/webpack-react/commit/2f61139))
+* **webpack-quark-html:** Creating quark package to create html index referencing js,css, ... ([2f61139](https://github.com/thc-tools/webpack-laboratory/commit/2f61139))

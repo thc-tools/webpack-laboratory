@@ -8,12 +8,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-css:** add missing default test ([9e0fe49](https://github.com/thc-tools/webpack-react/commit/9e0fe49))
+* **webpack-quark-css:** add missing default test ([9e0fe49](https://github.com/thc-tools/webpack-laboratory/commit/9e0fe49))
 
 
 ### Features
 
-* **webpack-quark-css:** Creating quark package for handling CSS and using PostCSS ([618fc89](https://github.com/thc-tools/webpack-react/commit/618fc89))
+* **webpack-quark-css:** Creating quark package for handling CSS and using PostCSS ([618fc89](https://github.com/thc-tools/webpack-laboratory/commit/618fc89))
 
 
 
@@ -24,9 +24,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-css:** add missing default test ([9e0fe49](https://github.com/thc-tools/webpack-react/commit/9e0fe49))
+* **webpack-quark-css:** add missing default test ([9e0fe49](https://github.com/thc-tools/webpack-laboratory/commit/9e0fe49))
 
 
 ### Features
 
-* **webpack-quark-css:** Creating quark package for handling CSS and using PostCSS ([618fc89](https://github.com/thc-tools/webpack-react/commit/618fc89))
+* **webpack-quark-css:** Creating quark package for handling CSS and using PostCSS ([618fc89](https://github.com/thc-tools/webpack-laboratory/commit/618fc89))

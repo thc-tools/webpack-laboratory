@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-entry:** Creating quark package for webpack entries, enhancing function in case of hot-reload ([bf6a3ef](https://github.com/thc-tools/webpack-react/commit/bf6a3ef))
+* **webpack-quark-entry:** Creating quark package for webpack entries, enhancing function in case of hot-reload ([bf6a3ef](https://github.com/thc-tools/webpack-laboratory/commit/bf6a3ef))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-entry:** Creating quark package for webpack entries, enhancing function in case of hot-reload ([bf6a3ef](https://github.com/thc-tools/webpack-react/commit/bf6a3ef))
+* **webpack-quark-entry:** Creating quark package for webpack entries, enhancing function in case of hot-reload ([bf6a3ef](https://github.com/thc-tools/webpack-laboratory/commit/bf6a3ef))

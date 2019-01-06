@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-scss:** Creating quark package for SCSS handling (based on css quark) ([8c7b1c7](https://github.com/thc-tools/webpack-react/commit/8c7b1c7))
+* **webpack-quark-scss:** Creating quark package for SCSS handling (based on css quark) ([8c7b1c7](https://github.com/thc-tools/webpack-laboratory/commit/8c7b1c7))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-scss:** Creating quark package for SCSS handling (based on css quark) ([8c7b1c7](https://github.com/thc-tools/webpack-react/commit/8c7b1c7))
+* **webpack-quark-scss:** Creating quark package for SCSS handling (based on css quark) ([8c7b1c7](https://github.com/thc-tools/webpack-laboratory/commit/8c7b1c7))

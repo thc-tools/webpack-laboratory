@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-misc:** Creating quark package to handle miscellaneous webpack options, like stats and watch options ([acf46d3](https://github.com/thc-tools/webpack-react/commit/acf46d3))
+* **webpack-quark-misc:** Creating quark package to handle miscellaneous webpack options, like stats and watch options ([acf46d3](https://github.com/thc-tools/webpack-laboratory/commit/acf46d3))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-misc:** Creating quark package to handle miscellaneous webpack options, like stats and watch options ([acf46d3](https://github.com/thc-tools/webpack-react/commit/acf46d3))
+* **webpack-quark-misc:** Creating quark package to handle miscellaneous webpack options, like stats and watch options ([acf46d3](https://github.com/thc-tools/webpack-laboratory/commit/acf46d3))
