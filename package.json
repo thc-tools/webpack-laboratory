@@ -1,5 +1,5 @@
 {
-  "name": "@thc/webpack-react",
+  "name": "@thc/webpack-laboratory",
   "version": "1.0.0",
   "description": "Ready to use webpack conf for React",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thc-tools/webpack-react.git"
+    "url": "git+https://github.com/thc-tools/webpack-laboratory.git"
   },
   "keywords": [
     "thc",
@@ -24,9 +24,9 @@
   "author": "THC-Tools",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thc-tools/webpack-react/issues"
+    "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
-  "homepage": "https://github.com/thc-tools/webpack-react#readme",
+  "homepage": "https://github.com/thc-tools/webpack-laboratory#readme",
   "devDependencies": {
     "@commitlint/cli": "7.2.1",
     "@commitlint/config-conventional": "7.1.2",

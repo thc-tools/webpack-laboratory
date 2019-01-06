@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-assets:** Creating quark package for handling assets ([ea58c8e](https://github.com/thc-tools/webpack-react/commit/ea58c8e))
+* **webpack-quark-assets:** Creating quark package for handling assets ([ea58c8e](https://github.com/thc-tools/webpack-laboratory/commit/ea58c8e))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-assets:** Creating quark package for handling assets ([ea58c8e](https://github.com/thc-tools/webpack-react/commit/ea58c8e))
+* **webpack-quark-assets:** Creating quark package for handling assets ([ea58c8e](https://github.com/thc-tools/webpack-laboratory/commit/ea58c8e))

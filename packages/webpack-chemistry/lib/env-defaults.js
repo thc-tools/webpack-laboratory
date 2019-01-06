@@ -11,7 +11,7 @@ const envDefaults = processEnv => {
 
     if (env.NODE_ENV !== "development" && env.NODE_ENV !== "production") {
         throw new Error(
-            "Using `@thc/webpack-react` requires that you specify `NODE_ENV`" +
+            "Using `@thc/webpack-laboratory` requires that you specify `NODE_ENV`" +
                 'environment variables. Valid values are "development" and "production". Instead, received: ' +
                 JSON.stringify(env) +
                 "."
