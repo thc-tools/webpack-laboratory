@@ -8,7 +8,7 @@
     "thc-tools"
   ],
   "author": "Hartorn <bazirehoussin@gmail.com>",
-  "homepage": "https://github.com/thc-tools/webpack-react/tree/master/packages/quarks/webpack-quark-typescript#readme",
+  "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-typescript#readme",
   "license": "MIT",
   "main": "lib/typescript.js",
   "directories": {
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thc-tools/webpack-react.git"
+    "url": "git+https://github.com/thc-tools/webpack-laboratory.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/thc-tools/webpack-react/issues"
+    "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "devDependencies": {
     "typescript": "3.2.2"

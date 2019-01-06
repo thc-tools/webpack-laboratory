@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-sourcemap:** Creating quark package to handle sourcemap config ([b3f71fb](https://github.com/thc-tools/webpack-react/commit/b3f71fb))
+* **webpack-quark-sourcemap:** Creating quark package to handle sourcemap config ([b3f71fb](https://github.com/thc-tools/webpack-laboratory/commit/b3f71fb))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-sourcemap:** Creating quark package to handle sourcemap config ([b3f71fb](https://github.com/thc-tools/webpack-react/commit/b3f71fb))
+* **webpack-quark-sourcemap:** Creating quark package to handle sourcemap config ([b3f71fb](https://github.com/thc-tools/webpack-laboratory/commit/b3f71fb))

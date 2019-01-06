@@ -8,12 +8,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-optimize:** remove old option ecma from uglify-es, add comments for extracting license and parallel building ([17781df](https://github.com/thc-tools/webpack-react/commit/17781df))
+* **webpack-quark-optimize:** remove old option ecma from uglify-es, add comments for extracting license and parallel building ([17781df](https://github.com/thc-tools/webpack-laboratory/commit/17781df))
 
 
 ### Features
 
-* **webpack-quark-optimize:** Creating quark package to optimize js output ([d9c5026](https://github.com/thc-tools/webpack-react/commit/d9c5026))
+* **webpack-quark-optimize:** Creating quark package to optimize js output ([d9c5026](https://github.com/thc-tools/webpack-laboratory/commit/d9c5026))
 
 
 
@@ -24,9 +24,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-optimize:** remove old option ecma from uglify-es, add comments for extracting license and parallel building ([17781df](https://github.com/thc-tools/webpack-react/commit/17781df))
+* **webpack-quark-optimize:** remove old option ecma from uglify-es, add comments for extracting license and parallel building ([17781df](https://github.com/thc-tools/webpack-laboratory/commit/17781df))
 
 
 ### Features
 
-* **webpack-quark-optimize:** Creating quark package to optimize js output ([d9c5026](https://github.com/thc-tools/webpack-react/commit/d9c5026))
+* **webpack-quark-optimize:** Creating quark package to optimize js output ([d9c5026](https://github.com/thc-tools/webpack-laboratory/commit/d9c5026))

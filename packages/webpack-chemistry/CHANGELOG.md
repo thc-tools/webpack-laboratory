@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-chemistry:** Creating utility package ([149cfa3](https://github.com/thc-tools/webpack-react/commit/149cfa3))
+* **webpack-chemistry:** Creating utility package ([149cfa3](https://github.com/thc-tools/webpack-laboratory/commit/149cfa3))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-chemistry:** Creating utility package ([149cfa3](https://github.com/thc-tools/webpack-react/commit/149cfa3))
+* **webpack-chemistry:** Creating utility package ([149cfa3](https://github.com/thc-tools/webpack-laboratory/commit/149cfa3))

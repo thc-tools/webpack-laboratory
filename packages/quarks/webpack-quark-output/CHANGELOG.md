@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-output:** Creating quark package to handle output option, like output directory, file and so on ([2a08f04](https://github.com/thc-tools/webpack-react/commit/2a08f04))
+* **webpack-quark-output:** Creating quark package to handle output option, like output directory, file and so on ([2a08f04](https://github.com/thc-tools/webpack-laboratory/commit/2a08f04))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-output:** Creating quark package to handle output option, like output directory, file and so on ([2a08f04](https://github.com/thc-tools/webpack-react/commit/2a08f04))
+* **webpack-quark-output:** Creating quark package to handle output option, like output directory, file and so on ([2a08f04](https://github.com/thc-tools/webpack-laboratory/commit/2a08f04))

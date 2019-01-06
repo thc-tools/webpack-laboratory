@@ -8,12 +8,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-babel:** correcting thread-loader options ([616bc9f](https://github.com/thc-tools/webpack-react/commit/616bc9f))
+* **webpack-quark-babel:** correcting thread-loader options ([616bc9f](https://github.com/thc-tools/webpack-laboratory/commit/616bc9f))
 
 
 ### Features
 
-* **webpack-quark-babel:** Creating quark package for using babel-loader, with cache and multithreading ([a384c1f](https://github.com/thc-tools/webpack-react/commit/a384c1f))
+* **webpack-quark-babel:** Creating quark package for using babel-loader, with cache and multithreading ([a384c1f](https://github.com/thc-tools/webpack-laboratory/commit/a384c1f))
 
 
 
@@ -24,9 +24,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **webpack-quark-babel:** correcting thread-loader options ([616bc9f](https://github.com/thc-tools/webpack-react/commit/616bc9f))
+* **webpack-quark-babel:** correcting thread-loader options ([616bc9f](https://github.com/thc-tools/webpack-laboratory/commit/616bc9f))
 
 
 ### Features
 
-* **webpack-quark-babel:** Creating quark package for using babel-loader, with cache and multithreading ([a384c1f](https://github.com/thc-tools/webpack-react/commit/a384c1f))
+* **webpack-quark-babel:** Creating quark package for using babel-loader, with cache and multithreading ([a384c1f](https://github.com/thc-tools/webpack-laboratory/commit/a384c1f))

@@ -10,7 +10,7 @@
     "js"
   ],
   "author": "Hartorn <bazirehoussin@gmail.com>",
-  "homepage": "https://github.com/thc-tools/webpack-react/tree/master/packages/atoms/webpack-atom-js-react-css#readme",
+  "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/atoms/webpack-atom-js-react-css#readme",
   "license": "MIT",
   "main": "lib/webpack-atom-js-react-css.js",
   "directories": {
@@ -24,14 +24,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thc-tools/webpack-react.git"
+    "url": "git+https://github.com/thc-tools/webpack-laboratory.git"
   },
   "scripts": {
     "postinstall": "node ./post-install.js",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/thc-tools/webpack-react/issues"
+    "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "publishConfig": {
     "access": "public"

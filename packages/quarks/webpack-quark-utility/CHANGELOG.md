@@ -8,7 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-utility:** Creating quark package to various options, like analyzing, cleaning up folders and so on ([17cbc34](https://github.com/thc-tools/webpack-react/commit/17cbc34))
+* **webpack-quark-utility:** Creating quark package to various options, like analyzing, cleaning up folders and so on ([17cbc34](https://github.com/thc-tools/webpack-laboratory/commit/17cbc34))
 
 
 
@@ -19,4 +19,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **webpack-quark-utility:** Creating quark package to various options, like analyzing, cleaning up folders and so on ([17cbc34](https://github.com/thc-tools/webpack-react/commit/17cbc34))
+* **webpack-quark-utility:** Creating quark package to various options, like analyzing, cleaning up folders and so on ([17cbc34](https://github.com/thc-tools/webpack-laboratory/commit/17cbc34))
