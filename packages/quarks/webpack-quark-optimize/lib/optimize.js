@@ -1,5 +1,5 @@
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = blockConfig => (processEnv, argv) => argConfig => {
     const defaultConf = {
@@ -7,21 +7,29 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
         mode: "development",
         bail: false,
         splitChunks: "all",
-        uglifyOptions: {}
+        terserOptions: {},
+        pluginOptions: {}
     };
 
-    const defaultUglifyConf = {
-        // TODO rework, to have both plugin options AND uglify options
-        /*parallel: true, 
-        extractComments: true,*/
+    const defaultTerserConf = {
         compress: {
             drop_console: true,
-            // ecma: 6,
+            ecma: 6,
             passes: 2
+        },
+        output: {
+            ecma: 6 // Use {a} instead of {a:a}, breaking only IE, see http://kangax.github.io/compat-table/es6/#test-object_literal_extensions_shorthand_properties
         }
     };
+
+    const defaultPluginOptions = {
+        parallel: true,
+        extractComments: true
+    };
+
     const mergedConf = safeMerge(defaultConf, blockConfig);
-    mergedConf.uglifyOptions = safeMerge(defaultUglifyConf, blockConfig.uglifyOptions);
+    mergedConf.terserOptions = safeMerge(defaultTerserConf, blockConfig.terserOptions);
+    mergedConf.pluginOptions = safeMerge(defaultPluginOptions, blockConfig.pluginOptions);
 
     const config = ensureConfig(argConfig);
 
@@ -30,8 +38,9 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
     config.bail = mergedConf.bail;
     config.optimization.splitChunks.chunks = mergedConf.splitChunks;
     config.optimization.minimizer.push(
-        new UglifyJsPlugin({
-            uglifyOptions: mergedConf.uglifyOptions
+        new TerserPlugin({
+            ...mergedConf.pluginOptions,
+            terserOptions: mergedConf.terserOptions
         })
     );
 
