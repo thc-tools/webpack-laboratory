@@ -29,7 +29,7 @@
   "homepage": "https://github.com/thc-tools/webpack-react#readme",
   "devDependencies": {
     "jest": "23.6.0",
-    "lerna": "3.6.0",
+    "lerna": "3.8.5",
     "webpack": "4.27.1"
   }
 }
