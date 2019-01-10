@@ -57,7 +57,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.5.0",
     "react-dev-utils": "7.0.1",
-    "webpack": "4.28.3",
+    "webpack": "4.28.4",
     "webpack-cli": "3.2.1",
     "webpack-dev-server": "3.1.14",
     "whatwg-fetch": "3.0.0"
