@@ -9,7 +9,7 @@
     "push-tags": "git push --follow-tags origin master",
     "beta-pre-release-lerna": "npm run lerna -- version --no-push prerelease --preid beta --exact",
     "pre-release-lerna": "npm run lerna -- version --no-push --exact",
-    "beta-release-lerna": "npm run lerna -- publish from-git --npm-tag beta",
+    "beta-release-lerna": "npm run lerna -- publish from-git --dist-tag beta",
     "release-lerna": "npm run lerna -- publish from-git"
   },
   "repository": {
