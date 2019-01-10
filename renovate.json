@@ -5,6 +5,8 @@
     "semanticCommits": true,
     "semanticCommitType": "chore",
     "commitMessageTopic": "{{depName}}",
+    "semanticCommitScope": null,
+    "branchPrefix": "deps/webpack-laboratory-",
     "extends": ["config:base"],
     "major": {
         "semanticCommitType": "feat",
@@ -20,64 +22,74 @@
     },
     "packageRules": [
         {
-            "paths": ["^[packages]"],
-            "semanticCommitScope": null
-        },
-        {
             "paths": ["webpack-chemistry"],
-            "semanticCommitScope": "webpack-chemistry"
+            "semanticCommitScope": "webpack-chemistry",
+            "branchPrefix": "deps/webpack-chemistry-"
         },
         {
             "paths": ["webpack-atom-js-react-css"],
-            "semanticCommitScope": "webpack-atom-js-react-css"
+            "semanticCommitScope": "webpack-atom-js-react-css",
+            "branchPrefix": "deps/webpack-atom-js-react-css-"
         },
         {
             "paths": ["webpack-quark-assets"],
-            "semanticCommitScope": "webpack-quark-assets"
+            "semanticCommitScope": "webpack-quark-assets",
+            "branchPrefix": "deps/webpack-quark-assets-"
         },
         {
             "paths": ["webpack-quark-babel"],
-            "semanticCommitScope": "webpack-quark-babel"
+            "semanticCommitScope": "webpack-quark-babel",
+            "branchPrefix": "deps/webpack-quark-babel-"
         },
         {
             "paths": ["webpack-quark-css"],
-            "semanticCommitScope": "webpack-quark-css"
+            "semanticCommitScope": "webpack-quark-css",
+            "branchPrefix": "deps/webpack-quark-css-"
         },
         {
             "paths": ["webpack-quark-entry"],
-            "semanticCommitScope": "webpack-quark-entry"
+            "semanticCommitScope": "webpack-quark-entry",
+            "branchPrefix": "deps/webpack-quark-entry-"
         },
         {
             "paths": ["webpack-quark-hot-reload"],
-            "semanticCommitScope": "webpack-quark-hot-reload"
+            "semanticCommitScope": "webpack-quark-hot-reload",
+            "branchPrefix": "deps/webpack-quark-hot-reload-"
         },
         {
             "paths": ["webpack-quark-html"],
-            "semanticCommitScope": "webpack-quark-html"
+            "semanticCommitScope": "webpack-quark-html",
+            "branchPrefix": "deps/webpack-quark-html-"
         },
         {
             "paths": ["webpack-quark-optimize"],
-            "semanticCommitScope": "webpack-quark-optimize"
+            "semanticCommitScope": "webpack-quark-optimize",
+            "branchPrefix": "deps/webpack-quark-optimize-"
         },
         {
             "paths": ["webpack-quark-output"],
-            "semanticCommitScope": "webpack-quark-output"
+            "semanticCommitScope": "webpack-quark-output",
+            "branchPrefix": "deps/webpack-quark-output-"
         },
         {
             "paths": ["webpack-quark-scss"],
-            "semanticCommitScope": "webpack-quark-scss"
+            "semanticCommitScope": "webpack-quark-scss",
+            "branchPrefix": "deps/webpack-quark-scss-"
         },
         {
             "paths": ["webpack-quark-sourcemap"],
-            "semanticCommitScope": "webpack-quark-sourcemap"
+            "semanticCommitScope": "webpack-quark-sourcemap",
+            "branchPrefix": "deps/webpack-quark-sourcemap-"
         },
         {
             "paths": ["webpack-quark-typescript"],
-            "semanticCommitScope": "webpack-quark-typescript"
+            "semanticCommitScope": "webpack-quark-typescript",
+            "branchPrefix": "deps/webpack-quark-typescript-"
         },
         {
             "paths": ["webpack-quark-utility"],
-            "semanticCommitScope": "webpack-quark-utility"
+            "semanticCommitScope": "webpack-quark-utility",
+            "branchPrefix": "deps/webpack-quark-utility-"
         }
     ]
 }
