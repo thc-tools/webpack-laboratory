@@ -4,6 +4,7 @@
     "rebaseStalePrs": true,
     "semanticCommits": true,
     "semanticCommitType": "chore",
+    "commitMessageTopic": "{{depName}}",
     "extends": ["config:base"],
     "major": {
         "semanticCommitType": "feat",
