@@ -24,7 +24,10 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     const defaultPluginOptions = {
         parallel: true,
-        extractComments: true
+        extractComments: {
+            condition: "some",
+            filename: "misc/LICENSE"
+        }
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
