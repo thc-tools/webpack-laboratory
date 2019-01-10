@@ -1,7 +1,7 @@
 "use strict";
 
 // This alternative WebpackDevServer is a tweak of
-// https://github.com/facebook/create-react-app/blob/next/packages/react-dev-utils/webpackHotDevClient.js
+// https://github.com/facebook/create-react-app/blob/master/packages/react-dev-utils/webpackHotDevClient.js
 
 // Changes made: using __DEV_SERVER_PROTOCOL__ __DEV_SERVER_HOST__ __DEV_SERVER_PORT__ for SockJS
 

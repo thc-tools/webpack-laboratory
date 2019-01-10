@@ -3,7 +3,9 @@ const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
 
 const errorOverlayMiddleware = require("react-dev-utils/errorOverlayMiddleware");
+const evalSourceMapMiddleware = require("react-dev-utils/evalSourceMapMiddleware");
 const noopServiceWorkerMiddleware = require("react-dev-utils/noopServiceWorkerMiddleware");
+const openBrowser = require("react-dev-utils/openBrowser");
 const clearConsole = require("react-dev-utils/clearConsole");
 const { choosePort, createCompiler, prepareUrls } = require("react-dev-utils/WebpackDevServerUtils");
 
@@ -26,10 +28,13 @@ const isInteractive = process.stdout.isTTY;
 const defaultServerConfig = {
     publicPath: OUTPUT_PUBLIC_PATH, // see https://webpack.js.org/configuration/dev-server/#devserver-publicpath-
     hot: true,
-    clientLogLevel: "info",
+    clientLogLevel: "none",
+    // Enable gzip compression of generated files.
+    compress: true,
     watchContentBase: true,
     quiet: true,
     overlay: false,
+    https: DEV_SERVER_PROTOCOL === "https",
     historyApiFallback: true,
     contentBase: OUTPUT_DIR,
     // By default, proxy all request different from built files, to the API
@@ -37,7 +42,9 @@ const defaultServerConfig = {
     headers: {
         "Access-Control-Allow-Origin": "*"
     },
-    setup(app) {
+    before(app, server) {
+        // This lets us fetch source contents from webpack for the error overlay
+        app.use(evalSourceMapMiddleware(server));
         // This lets us open files from the runtime error overlay.
         app.use(errorOverlayMiddleware());
         // This service worker file is effectively a 'no-op' that will reset any
@@ -73,6 +80,7 @@ module.exports = (webpackConfig, serverConfig = {}) => {
                     clearConsole();
                 }
                 console.log(chalk.cyan("Starting the development server at %s:%s...\n"), DEV_SERVER_HOST, port);
+                openBrowser(urls.localUrlForBrowser);
             });
 
             ["SIGINT", "SIGTERM"].forEach(sig => {
