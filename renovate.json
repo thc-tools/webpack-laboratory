@@ -1,22 +1,78 @@
 {
-  "assignees": ["c3dr0x", "Hartorn"],
-  "separateMinorPatch": true,
-  "rebaseStalePrs": true,
-  "semanticCommits": true,
-  "semanticCommitType": "chore",
-  "extends": [
-    "config:base"
-  ],
-  "major": {
-    "semanticCommitType": "feat",
-    "labels": ["dependencies", "dep:major"]
-  },
-  "minor": {
-    "semanticCommitType": "fix",
-    "labels": ["dependencies", "dep:minor"]
-  },
-  "patch": {
+    "assignees": ["c3dr0x", "Hartorn"],
+    "separateMinorPatch": true,
+    "rebaseStalePrs": true,
+    "semanticCommits": true,
     "semanticCommitType": "chore",
-    "labels": ["dependencies", "dep:patch"]
-  }
+    "extends": ["config:base"],
+    "major": {
+        "semanticCommitType": "feat",
+        "labels": ["dependencies", "dep:major"]
+    },
+    "minor": {
+        "semanticCommitType": "fix",
+        "labels": ["dependencies", "dep:minor"]
+    },
+    "patch": {
+        "semanticCommitType": "chore",
+        "labels": ["dependencies", "dep:patch"]
+    },
+    "packageRules": [
+        {
+            "paths": ["webpack-chemistry"],
+            "semanticCommitScope": "webpack-chemistry"
+        },
+        {
+            "paths": ["webpack-atom-js-react-css"],
+            "semanticCommitScope": "webpack-atom-js-react-css"
+        },
+        {
+            "paths": ["webpack-quark-assets"],
+            "semanticCommitScope": "webpack-quark-assets"
+        },
+        {
+            "paths": ["webpack-quark-babel"],
+            "semanticCommitScope": "webpack-quark-babel"
+        },
+        {
+            "paths": ["webpack-quark-css"],
+            "semanticCommitScope": "webpack-quark-css"
+        },
+        {
+            "paths": ["webpack-quark-entry"],
+            "semanticCommitScope": "webpack-quark-entry"
+        },
+        {
+            "paths": ["webpack-quark-hot-reload"],
+            "semanticCommitScope": "webpack-quark-hot-reload"
+        },
+        {
+            "paths": ["webpack-quark-html"],
+            "semanticCommitScope": "webpack-quark-html"
+        },
+        {
+            "paths": ["webpack-quark-optimize"],
+            "semanticCommitScope": "webpack-quark-optimize"
+        },
+        {
+            "paths": ["webpack-quark-output"],
+            "semanticCommitScope": "webpack-quark-output"
+        },
+        {
+            "paths": ["webpack-quark-scss"],
+            "semanticCommitScope": "webpack-quark-scss"
+        },
+        {
+            "paths": ["webpack-quark-sourcemap"],
+            "semanticCommitScope": "webpack-quark-sourcemap"
+        },
+        {
+            "paths": ["webpack-quark-typescript"],
+            "semanticCommitScope": "webpack-quark-typescript"
+        },
+        {
+            "paths": ["webpack-quark-utility"],
+            "semanticCommitScope": "webpack-quark-utility"
+        }
+    ]
 }
