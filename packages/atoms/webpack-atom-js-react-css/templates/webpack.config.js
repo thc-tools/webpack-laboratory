@@ -16,7 +16,7 @@ const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
 const enhanceForHotReload = entries => {
     return [
-        "@thc/webpack-atom-js-react-css/lib/react-hot-dev-client",
+        "@thc/webpack-quark-hot-reload/lib/react-hot-dev-client",
         "react-error-overlay",
         "webpack/hot/only-dev-server"
     ].concat(entries);
