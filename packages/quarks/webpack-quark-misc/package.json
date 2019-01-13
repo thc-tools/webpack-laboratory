@@ -1,40 +1,40 @@
 {
-    "name": "@thc/webpack-quark-misc",
-    "version": "1.0.0-beta.0",
-    "description": "Basic webpack block to handle various webpack options",
-    "keywords": [
-        "webpack",
-        "thc-tools",
-        "options"
-    ],
-    "author": "Hartorn <bazirehoussin@gmail.com>",
-    "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-misc#readme",
-    "license": "MIT",
-    "main": "lib/misc.js",
-    "directories": {
-        "lib": "lib",
-        "test": "__tests__"
-    },
-    "files": [
-        "lib"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/thc-tools/webpack-laboratory.git"
-    },
-    "scripts": {
-        "test": "echo \"Error: run tests from root\" && exit 1"
-    },
-    "bugs": {
-        "url": "https://github.com/thc-tools/webpack-laboratory/issues"
-    },
-    "peerDependencies": {
-        "webpack": "^4.0.0"
-    },
-    "dependencies": {
-        "@thc/webpack-chemistry": "1.0.0-alpha.1"
-    }
+  "name": "@thc/webpack-quark-misc",
+  "version": "1.0.0-beta.0",
+  "description": "Basic webpack block to handle various webpack options",
+  "keywords": [
+    "webpack",
+    "thc-tools",
+    "options"
+  ],
+  "author": "Hartorn <bazirehoussin@gmail.com>",
+  "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-misc#readme",
+  "license": "MIT",
+  "main": "lib/misc.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thc-tools/webpack-laboratory.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/thc-tools/webpack-laboratory/issues"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  },
+  "dependencies": {
+    "@thc/webpack-chemistry": "1.0.0-beta.0"
+  }
 }
