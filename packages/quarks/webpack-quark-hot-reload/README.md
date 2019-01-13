@@ -1,11 +1,11 @@
-# `@thc/webpack-quark-hot-reload`
+# `@thc/webpack-quark-dev-server`
 
 > TODO: description
 
 ## Usage
 
 ```
-const webpackQuarkHotReload = require('@thc/webpack-quark-hot-reload');
+const webpackQuarkHotReload = require('@thc/webpack-quark-dev-server');
 
 // TODO: DEMONSTRATE API
 ```
