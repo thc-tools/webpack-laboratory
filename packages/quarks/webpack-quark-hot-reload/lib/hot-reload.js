@@ -18,9 +18,23 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
     mergedConf.serverConfig = safeMerge(defaultServerConf, mergedConf.serverConfig);
-    mergedConf.serverConfig.__DEV_SERVER_PROTOCOL__ = JSON.stringify(mergedConf.serverConfig.__DEV_SERVER_PROTOCOL__);
-    mergedConf.serverConfig.__DEV_SERVER_HOST__ = JSON.stringify(mergedConf.serverConfig.__DEV_SERVER_HOST__);
-    mergedConf.serverConfig.__DEV_SERVER_SUBDOMAIN__ = JSON.stringify(mergedConf.serverConfig.__DEV_SERVER_SUBDOMAIN__);
+    // If someone use custom config, we need to avoid stringify
+    // Or maybe stringify for them ? to see (integer needs to remain integer, so cannot stringify the whole object)
+    if (mergedConf.serverConfig.__DEV_SERVER_PROTOCOL__ !== undefined) {
+        mergedConf.serverConfig.__DEV_SERVER_PROTOCOL__ = JSON.stringify(
+            mergedConf.serverConfig.__DEV_SERVER_PROTOCOL__
+        );
+    }
+
+    if (mergedConf.serverConfig.__DEV_SERVER_HOST__ !== undefined) {
+        mergedConf.serverConfig.__DEV_SERVER_HOST__ = JSON.stringify(mergedConf.serverConfig.__DEV_SERVER_HOST__);
+    }
+
+    if (mergedConf.serverConfig.__DEV_SERVER_SUBDOMAIN__ !== undefined) {
+        mergedConf.serverConfig.__DEV_SERVER_SUBDOMAIN__ = JSON.stringify(
+            mergedConf.serverConfig.__DEV_SERVER_SUBDOMAIN__
+        );
+    }
 
     const config = ensureConfig(argConfig);
 
