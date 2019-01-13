@@ -1,5 +1,5 @@
 {
-  "name": "@thc/webpack-quark-hot-reload",
+  "name": "@thc/webpack-quark-dev-server",
   "version": "1.0.0-beta.0",
   "description": "Basic webpack block to handle hot reload",
   "keywords": [
@@ -8,7 +8,7 @@
     "hot-reload"
   ],
   "author": "Hartorn <bazirehoussin@gmail.com>",
-  "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-hot-reload#readme",
+  "homepage": "https://github.com/thc-tools/webpack-laboratory/tree/master/packages/quarks/webpack-quark-dev-server#readme",
   "license": "MIT",
   "main": "lib/hot-reload.js",
   "directories": {

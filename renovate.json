@@ -52,9 +52,9 @@
             "branchPrefix": "deps/webpack-quark-entry-"
         },
         {
-            "paths": ["webpack-quark-hot-reload"],
-            "semanticCommitScope": "webpack-quark-hot-reload",
-            "branchPrefix": "deps/webpack-quark-hot-reload-"
+            "paths": ["webpack-quark-dev-server"],
+            "semanticCommitScope": "webpack-quark-dev-server",
+            "branchPrefix": "deps/webpack-quark-dev-server-"
         },
         {
             "paths": ["webpack-quark-html"],

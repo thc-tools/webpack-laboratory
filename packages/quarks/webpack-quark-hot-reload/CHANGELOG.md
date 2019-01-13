@@ -5,28 +5,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 1.0.0-beta.0 (2018-12-19)
 
-
 ### Bug Fixes
 
-* **webpack-quark-hot-reload:** fixing non-stringified values for define plugin ([5d9aea7](https://github.com/thc-tools/webpack-laboratory/commit/5d9aea7))
-
+-   **webpack-quark-dev-server:** fixing non-stringified values for define plugin ([5d9aea7](https://github.com/thc-tools/webpack-laboratory/commit/5d9aea7))
 
 ### Features
 
-* **webpack-quark-hot-reload:** Creating quark package to handle hot reload ([8e5cc09](https://github.com/thc-tools/webpack-laboratory/commit/8e5cc09))
-
-
-
-
+-   **webpack-quark-dev-server:** Creating quark package to handle hot reload ([8e5cc09](https://github.com/thc-tools/webpack-laboratory/commit/8e5cc09))
 
 # 1.0.0-beta.0 (2018-12-19)
 
-
 ### Bug Fixes
 
-* **webpack-quark-hot-reload:** fixing non-stringified values for define plugin ([5d9aea7](https://github.com/thc-tools/webpack-laboratory/commit/5d9aea7))
-
+-   **webpack-quark-dev-server:** fixing non-stringified values for define plugin ([5d9aea7](https://github.com/thc-tools/webpack-laboratory/commit/5d9aea7))
 
 ### Features
 
-* **webpack-quark-hot-reload:** Creating quark package to handle hot reload ([8e5cc09](https://github.com/thc-tools/webpack-laboratory/commit/8e5cc09))
+-   **webpack-quark-dev-server:** Creating quark package to handle hot reload ([8e5cc09](https://github.com/thc-tools/webpack-laboratory/commit/8e5cc09))

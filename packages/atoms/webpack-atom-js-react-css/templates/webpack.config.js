@@ -4,7 +4,7 @@ const handleAssets = require("@thc/webpack-quark-assets");
 const handleJs = require("@thc/webpack-quark-babel");
 const handleCss = require("@thc/webpack-quark-css");
 const configEntries = require("@thc/webpack-quark-entry");
-const addHotReload = require("@thc/webpack-quark-hot-reload");
+const addHotReload = require("@thc/webpack-quark-dev-server");
 const addHtmlIndex = require("@thc/webpack-quark-html");
 const miscOptions = require("@thc/webpack-quark-misc");
 const optimize = require("@thc/webpack-quark-optimize");
@@ -16,7 +16,7 @@ const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
 const enhanceForHotReload = entries => {
     return [
-        "@thc/webpack-quark-hot-reload/lib/react-hot-dev-client",
+        "@thc/webpack-quark-dev-server/lib/react-hot-dev-client",
         "react-error-overlay",
         "webpack/hot/only-dev-server"
     ].concat(entries);
