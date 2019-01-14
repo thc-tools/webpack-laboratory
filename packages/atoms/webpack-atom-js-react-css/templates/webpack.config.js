@@ -10,7 +10,6 @@ const miscOptions = require("@thc/webpack-quark-misc");
 const optimize = require("@thc/webpack-quark-optimize");
 const configOutput = require("@thc/webpack-quark-output");
 const generateSourcemap = require("@thc/webpack-quark-sourcemap");
-const utilities = require("@thc/webpack-quark-utility");
 
 const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
