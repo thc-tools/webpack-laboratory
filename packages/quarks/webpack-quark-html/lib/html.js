@@ -16,7 +16,7 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     config.plugins.push(
         new HtmlWebpackPlugin({
-            inject: "body",
+            inject: "head",
             template: mergedConf.template,
             templateParameters: mergedConf.templateParameters
         })
