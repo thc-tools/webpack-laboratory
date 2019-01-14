@@ -1,6 +1,8 @@
 "use strict";
 
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
 
 module.exports = blockConfig => (processEnv, argv) => argConfig => {
     const defaultConf = {
@@ -18,7 +20,9 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
             errors: true,
             errorDetails: true,
             warnings: true
-        }
+        },
+        caseSensitivePaths: true,
+        analyze: false
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
@@ -26,6 +30,14 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     config.watchOptions.ignored = mergedConf.ignored;
     config.stats = mergedConf.stats;
+
+    if (mergedConf.caseSensitivePaths) {
+        config.plugins.push(new CaseSensitivePathsPlugin());
+    }
+
+    if (mergedConf.analyze) {
+        config.plugins.push(new BundleAnalyzerPlugin());
+    }
 
     return config;
 };
