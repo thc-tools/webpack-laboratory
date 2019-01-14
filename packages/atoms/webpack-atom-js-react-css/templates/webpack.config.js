@@ -66,7 +66,9 @@ module.exports = (processEnv, argv) => {
             }
         }),
         addHtmlIndex(),
-        miscOptions(),
+        miscOptions({
+            analyze: env.ANALYZE
+        }),
         optimize({
             minimize: isProd,
             mode: env.NODE_ENV,
@@ -79,10 +81,6 @@ module.exports = (processEnv, argv) => {
         generateSourcemap({
             devtool: isProd ? "none" : "cheap-eval-source-map",
             test: /\.jsx?$/
-        }),
-        utilities({
-            cleanupPath: env.OUTPUT_DIR,
-            analyze: env.ANALYZE
         })
     );
 
