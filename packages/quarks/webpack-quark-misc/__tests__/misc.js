@@ -12,5 +12,8 @@ describe("The misc block", () => {
         it("should have setup stats", () => {
             expect(config.stats).toBeDefined();
         });
+        it("should have setup plugins", () => {
+            expect(config.plugins.length).toBe(1);
+        });
     });
 });

@@ -18,5 +18,8 @@ describe("The output block", () => {
         it("should have setup chunkFilename", () => {
             expect(config.output.chunkFilename).toBeDefined();
         });
+        it("should have setup plugins", () => {
+            expect(config.plugins.length).toBe(1);
+        });
     });
 });
