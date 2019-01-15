@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-html",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Webpack block to handle HTML index",
   "keywords": [
     "thc-tools",
@@ -39,7 +39,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0-beta.0",
+    "@thc/webpack-chemistry": "1.0.0",
     "html-webpack-plugin": "3.2.0"
   }
 }

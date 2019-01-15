@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-dev-server",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Basic webpack block to handle hot reload",
   "keywords": [
     "webpack",
@@ -32,7 +32,7 @@
     "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0-beta.0",
+    "@thc/webpack-chemistry": "1.0.0",
     "react-dev-utils": "7.0.1",
     "webpack-dev-server": "3.1.14"
   },

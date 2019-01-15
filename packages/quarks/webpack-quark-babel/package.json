@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-babel",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Basic webpack block to handle babel",
   "keywords": [
     "webpack",
@@ -35,7 +35,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0-beta.0",
+    "@thc/webpack-chemistry": "1.0.0",
     "babel-loader": "8.0.5",
     "cache-loader": "2.0.1",
     "thread-loader": "2.1.1"

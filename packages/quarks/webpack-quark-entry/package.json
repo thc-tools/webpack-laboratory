@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-entry",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Basic webpack block to handle entries",
   "keywords": [
     "thc-tools",
@@ -32,7 +32,7 @@
     "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0-beta.0"
+    "@thc/webpack-chemistry": "1.0.0"
   },
   "peerDependencies": {
     "webpack": "^4.0.0"

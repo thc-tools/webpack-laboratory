@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-css",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0",
   "description": "Basic webpack block to handle CSS",
   "keywords": [
     "webpack",
@@ -36,7 +36,7 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0-beta.0",
+    "@thc/webpack-chemistry": "1.0.0",
     "css-loader": "2.1.0",
     "mini-css-extract-plugin": "0.5.0",
     "postcss-loader": "3.0.0",
