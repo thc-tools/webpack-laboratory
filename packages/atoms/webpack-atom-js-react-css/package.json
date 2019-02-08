@@ -56,7 +56,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.5.0",
     "webpack": "4.29.3",
-    "webpack-cli": "3.2.1",
+    "webpack-cli": "3.2.3",
     "whatwg-fetch": "3.0.0"
   }
 }
