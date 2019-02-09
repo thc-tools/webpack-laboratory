@@ -49,7 +49,7 @@ module.exports = (processEnv, argv) => {
             }
         }),
         handleCss({ extractCss: !hotReload }),
-        handleAssets({ defaultExclude: [/\.ejs$/, /\.jsx?$/, /\.css$/, /\.json$/] }),
+        handleAssets({ defaultsExclude: [/\.ejs$/, /\.jsx?$/, /\.css$/, /\.json$/] }),
         configEntries({
             polyfill: ["@babel/polyfill", /*Needed for Opera Mini*/ "whatwg-fetch"],
             entries: { main: "./src/app.js" },
