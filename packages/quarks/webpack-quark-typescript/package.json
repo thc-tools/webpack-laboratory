@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic webpack block to handle Typescript",
   "keywords": [
     "typecript",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "@thc/webpack-quark-babel": "1.0.0",
+    "@thc/webpack-quark-babel": "1.0.1",
     "fork-ts-checker-webpack-plugin": "0.5.2",
     "ts-loader": "5.3.3",
     "tslint": "5.12.1"

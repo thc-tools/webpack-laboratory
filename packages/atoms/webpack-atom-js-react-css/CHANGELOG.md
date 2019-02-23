@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.0...@thc/webpack-atom-js-react-css@1.0.1) (2019-02-23)
+
+
+### Bug Fixes
+
+* **webpack-atom-js-react-css:** defaultExclude have no s ([44002aa](https://github.com/thc-tools/webpack-laboratory/commit/44002aa))
+* **webpack-atom-js-react-css:** fix variable name ([6419666](https://github.com/thc-tools/webpack-laboratory/commit/6419666))
+* **webpack-atom-js-react-css:** update webpack to v4.29.0 ([91b8c4c](https://github.com/thc-tools/webpack-laboratory/commit/91b8c4c))
+
+
+
+
+
+
 # [1.0.0](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.0-beta.0...@thc/webpack-atom-js-react-css@1.0.0) (2019-01-15)
 
 

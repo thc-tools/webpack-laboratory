@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-typescript@1.0.0...@thc/webpack-quark-typescript@1.0.1) (2019-02-23)
+
+
+### Bug Fixes
+
+* **webpack-quark-typescript:** update typescript to v3.3.3 ([dc2026f](https://github.com/thc-tools/webpack-laboratory/commit/dc2026f))
+
+
+
+
+
+
 # [1.0.0](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-typescript@1.0.0-beta.0...@thc/webpack-quark-typescript@1.0.0) (2019-01-15)
 
 
