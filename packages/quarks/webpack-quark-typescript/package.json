@@ -39,7 +39,7 @@
     "@thc/webpack-quark-babel": "1.0.0",
     "fork-ts-checker-webpack-plugin": "0.5.2",
     "ts-loader": "5.3.3",
-    "tslint": "5.13.1"
+    "tslint": "5.14.0"
   },
   "peerDependencies": {
     "tslint": "^5.11.0",
