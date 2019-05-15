@@ -32,7 +32,7 @@
     "@commitlint/travis-cli": "7.6.1",
     "husky": "2.3.0",
     "jest": "24.8.0",
-    "lerna": "3.14.0",
+    "lerna": "3.14.1",
     "webpack": "4.31.0"
   },
   "husky": {
