@@ -55,7 +55,7 @@
     "postcss-mixins": "6.2.1",
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.6.0",
-    "webpack": "4.31.0",
+    "webpack": "4.32.0",
     "webpack-cli": "3.3.2",
     "whatwg-fetch": "3.0.0"
   }
