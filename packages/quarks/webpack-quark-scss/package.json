@@ -22,7 +22,7 @@
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
     "@thc/webpack-quark-css": "1.0.0",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "sass-loader": "8.0.0"
   },
   "publishConfig": {
