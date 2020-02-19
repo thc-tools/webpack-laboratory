@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "file-loader": "5.0.2",
+    "file-loader": "5.1.0",
     "url-loader": "3.0.0"
   }
 }
