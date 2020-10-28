@@ -38,7 +38,7 @@
     "@thc/webpack-chemistry": "1.0.0",
     "@thc/webpack-quark-babel": "1.0.0",
     "fork-ts-checker-webpack-plugin": "5.0.1",
-    "ts-loader": "7.0.5",
+    "ts-loader": "8.0.7",
     "tslint": "5.20.1"
   },
   "peerDependencies": {
