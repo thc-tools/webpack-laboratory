@@ -7,8 +7,8 @@
     "bootstrap": "npm run lerna -- bootstrap --no-ci",
     "test": "jest --runInBand --no-cache",
     "push-tags": "git push --follow-tags origin master",
-    "beta-release-lerna": "npm run lerna -- publish prerelease --preid beta --dist-tag beta --github-release --exact --allow-branch develop",
-    "release-lerna": "npm run lerna -- publish --github-release --exact"
+    "beta-release-lerna": "npm run lerna -- publish prerelease --preid beta --dist-tag beta --create-release=github --exact --allow-branch develop",
+    "release-lerna": "npm run lerna -- publish --create-release=github --exact"
   },
   "repository": {
     "type": "git",
