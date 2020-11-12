@@ -57,6 +57,6 @@
     "postcss-preset-env": "6.7.0",
     "webpack": "4.44.2",
     "webpack-cli": "3.3.12",
-    "whatwg-fetch": "3.4.1"
+    "whatwg-fetch": "3.5.0"
   }
 }
