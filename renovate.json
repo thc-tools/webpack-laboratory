@@ -7,7 +7,10 @@
     "commitMessageTopic": "{{depName}}",
     "semanticCommitScope": null,
     "branchPrefix": "deps/webpack-laboratory-",
-    "extends": ["config:base"],
+    "extends": [
+        "config:base",
+        ":disableRateLimiting"
+    ],
     "major": {
         "semanticCommitType": "feat",
         "labels": ["dependencies", "dep:major"]
