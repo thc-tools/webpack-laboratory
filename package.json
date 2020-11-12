@@ -33,7 +33,7 @@
     "husky": "4.2.5",
     "jest": "26.6.1",
     "lerna": "3.22.1",
-    "webpack": "4.43.0"
+    "webpack": "5.4.0"
   },
   "husky": {
     "hooks": {
