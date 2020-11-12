@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "Basic webpack block to handle Typescript",
   "keywords": [
     "typecript",
@@ -36,12 +36,12 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "@thc/webpack-quark-babel": "1.0.0",
-    "fork-ts-checker-webpack-plugin": "6.0.1",
-    "ts-loader": "8.0.11",
-    "eslint": "7.13.0",
+    "@thc/webpack-quark-babel": "1.0.1-beta.0",
+    "@typescript-eslint/eslint-plugin": "4.7.0",
     "@typescript-eslint/parser": "4.7.0",
-    "@typescript-eslint/eslint-plugin": "4.7.0"
+    "eslint": "7.13.0",
+    "fork-ts-checker-webpack-plugin": "6.0.1",
+    "ts-loader": "8.0.11"
   },
   "peerDependencies": {
     "typescript": "^4.0.5",

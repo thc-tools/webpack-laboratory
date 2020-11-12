@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-css",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "Basic webpack block to handle CSS",
   "keywords": [
     "webpack",

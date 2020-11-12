@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.0](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-optimize@1.0.0...@thc/webpack-quark-optimize@1.0.1-beta.0) (2020-11-12)
+
+
+### Bug Fixes
+
+* massive updates ([d9cdb6d](https://github.com/thc-tools/webpack-laboratory/commit/d9cdb6de2947dca6e215f3d5150b44176117fdeb))
+* **webpack-quark-optimize:** update terser-webpack-plugin to v1.3.0 ([67c6183](https://github.com/thc-tools/webpack-laboratory/commit/67c618314a1b8afba1bfad6a3c23e94f87b82062))
+* **webpack-quark-optimize:** update terser-webpack-plugin to v1.4.1 ([#232](https://github.com/thc-tools/webpack-laboratory/issues/232)) ([25b7d0e](https://github.com/thc-tools/webpack-laboratory/commit/25b7d0e81b53b90f50da8343af6672265872f030))
+* **webpack-quark-optimize:** update terser-webpack-plugin to v2.3.2 ([f9c6347](https://github.com/thc-tools/webpack-laboratory/commit/f9c63477f41566c3ca6c8d30ac87f8b748ca1591))
+* **webpack-quark-optimize:** update terser-webpack-plugin to v3.1.0 ([44eab28](https://github.com/thc-tools/webpack-laboratory/commit/44eab28a96a2e258d2d200c24aaa89bf08e8023c))
+
+
+### Features
+
+* **webpack-quark-optimize:** update terser-webpack-plugin to v2 ([8f5d5f6](https://github.com/thc-tools/webpack-laboratory/commit/8f5d5f6d7d8e2248e67a1792d1391964140b7ce1))
+* **webpack-quark-optimize:** update terser-webpack-plugin to v3 ([5077155](https://github.com/thc-tools/webpack-laboratory/commit/5077155dd87c9ef71f672bde351e3bf27fdcb7ac))
+
+
+
+
+
 # [1.0.0](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-optimize@1.0.0-beta.0...@thc/webpack-quark-optimize@1.0.0) (2019-01-15)
 
 

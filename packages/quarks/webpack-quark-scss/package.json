@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-scss",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "Basic webpack block to handle SCSS",
   "keywords": [
     "webpack",
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "@thc/webpack-quark-css": "1.0.0",
+    "@thc/webpack-quark-css": "1.0.1-beta.0",
     "sass": "1.29.0",
     "sass-loader": "10.1.0"
   },
