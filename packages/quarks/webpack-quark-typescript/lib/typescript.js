@@ -5,7 +5,7 @@ const { cpus } = require("os");
 const { ensureConfig, safeMerge, createConfigurator } = require("@thc/webpack-chemistry");
 const handleTs = require("@thc/webpack-quark-babel");
 
-module.exports = blockConfig => (processEnv, argv) => argConfig => {
+module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
         asyncChecking: true,
         test: /\.ts$/,
@@ -14,10 +14,10 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
             {
                 loader: "ts-loader",
                 options: {
-                    transpileOnly: true // Leave type checking to plugin
-                }
-            }
-        ]
+                    transpileOnly: true, // Leave type checking to plugin
+                },
+            },
+        ],
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
@@ -28,8 +28,10 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     config.plugins.push(
         new ForkTsCheckerWebpackPlugin({
-            tslint: true,
-            async: mergedConf.asyncChecking
+            eslint: {
+                files: "**/*.{ts,tsx,js,jsx}",
+            },
+            async: mergedConf.asyncChecking,
         })
     );
 

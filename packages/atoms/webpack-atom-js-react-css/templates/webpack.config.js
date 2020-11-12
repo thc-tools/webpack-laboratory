@@ -13,11 +13,11 @@ const generateSourcemap = require("@thc/webpack-quark-sourcemap");
 
 const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
-const enhanceForHotReload = entries => {
+const enhanceForHotReload = (entries) => {
     return [
         "@thc/webpack-quark-dev-server/lib/react-hot-dev-client",
         "react-error-overlay",
-        "webpack/hot/only-dev-server"
+        "webpack/hot/only-dev-server",
     ].concat(entries);
 };
 
@@ -41,19 +41,19 @@ module.exports = (processEnv, argv) => {
                         "@thc/babel-preset-react",
                         {
                             mode: env.NODE_ENV,
-                            hot: hotReload
-                        }
-                    ]
+                            hot: hotReload,
+                        },
+                    ],
                 ],
-                babelrc: false
-            }
+                babelrc: false,
+            },
         }),
         handleCss({ extractCss: !hotReload }),
         handleAssets({ defaultsExclude: [/\.ejs$/, /\.jsx?$/, /\.css$/, /\.json$/] }),
         configEntries({
             polyfill: ["@babel/polyfill", /*Needed for Opera Mini*/ "whatwg-fetch"],
             entries: { main: "./src/app.js" },
-            enhance: hotReload ? enhanceForHotReload : false
+            enhance: hotReload ? enhanceForHotReload : false,
         }),
         addHotReload({
             hot: hotReload,
@@ -61,25 +61,25 @@ module.exports = (processEnv, argv) => {
                 __DEV_SERVER_PROTOCOL__: env.DEV_SERVER_PROTOCOL,
                 __DEV_SERVER_HOST__: env.DEV_SERVER_HOST,
                 __DEV_SERVER_PORT__: env.DEV_SERVER_PORT,
-                __DEV_SERVER_SUBDOMAIN__: env.DEV_SERVER_SUBDOMAIN
-            }
+                __DEV_SERVER_SUBDOMAIN__: env.DEV_SERVER_SUBDOMAIN,
+            },
         }),
         addHtmlIndex(),
         miscOptions({
-            analyze: env.ANALYZE
+            analyze: env.ANALYZE,
         }),
         optimize({
             minimize: isProd,
             mode: env.NODE_ENV,
-            bail: isProd
+            bail: isProd,
         }),
         configOutput({
             path: env.OUTPUT_DIR,
-            publicPath: env.OUTPUT_PUBLIC_PATH
+            publicPath: env.OUTPUT_PUBLIC_PATH,
         }),
         generateSourcemap({
-            devtool: isProd ? "none" : "cheap-eval-source-map",
-            test: /\.jsx?$/
+            devtool: isProd ? "none" : "eval-cheap-source-map",
+            test: /\.jsx?$/,
         })
     );
 

@@ -32,10 +32,10 @@
     "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "peerDependencies": {
-    "webpack": "^4.0.0"
+    "webpack": "^5.0.0"
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "source-map-loader": "1.0.2"
+    "source-map-loader": "1.1.2"
   }
 }

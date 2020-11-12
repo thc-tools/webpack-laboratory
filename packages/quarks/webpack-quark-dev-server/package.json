@@ -33,10 +33,10 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
-    "react-dev-utils": "10.2.1",
+    "react-dev-utils": "11.0.0",
     "webpack-dev-server": "3.11.0"
   },
   "peerDependencies": {
-    "webpack": "^4.0.0"
+    "webpack": "^5.0.0"
   }
 }

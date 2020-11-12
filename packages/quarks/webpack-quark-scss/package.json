@@ -22,8 +22,8 @@
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.0",
     "@thc/webpack-quark-css": "1.0.0",
-    "node-sass": "4.14.1",
-    "sass-loader": "9.0.3"
+    "sass": "1.29.0",
+    "sass-loader": "10.1.0"
   },
   "publishConfig": {
     "access": "public"

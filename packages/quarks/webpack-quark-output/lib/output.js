@@ -1,17 +1,17 @@
 "use strict";
 
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const path = require("path");
 
-module.exports = blockConfig => (processEnv, argv) => argConfig => {
+module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
         filename: `js/[name]_${processEnv.npm_package_version}.bundle.js`,
         chunkFilename: "chunks/[name]_[hash].js",
         path: path.resolve(process.cwd(), "./dist"),
         publicPath: "/",
-        cleanup: ["js", "misc", "chunks", "img", "fonts", "css", "html"]
+        cleanup: ["js", "misc", "chunks", "img", "fonts", "css", "html"],
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
@@ -24,9 +24,13 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     if (mergedConf.cleanup) {
         config.plugins.push(
-            new CleanWebpackPlugin(mergedConf.cleanup, {
-                allowExternal: true,
-                root: mergedConf.path
+            new CleanWebpackPlugin({
+                verbose: true,
+                dry: false,
+                cleanStaleWebpackAssets: true,
+                protectWebpackAssets: false,
+                cleanOnceBeforeBuildPatterns: mergedConf.cleanup,
+                dangerouslyAllowCleanPatternsOutsideProject: true,
             })
         );
     }
