@@ -2,6 +2,7 @@
 
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
 const webpack = require("webpack");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
@@ -28,7 +29,7 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
         "process.env": {
             WDS_SOCKET_HOST: mergedConf.serverConfig.DEV_SERVER_HOST,
             WDS_SOCKET_PORT: +mergedConf.serverConfig.DEV_SERVER_PORT,
-            FAST_REFRESH: false,
+            FAST_REFRESH: true,
         },
     };
 
@@ -36,6 +37,7 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
 
     if (mergedConf.hot) {
         config.plugins.push(new webpack.HotModuleReplacementPlugin());
+        config.plugins.push(new ReactRefreshWebpackPlugin());
     }
     config.plugins.push(new webpack.DefinePlugin(defineConfig));
 
