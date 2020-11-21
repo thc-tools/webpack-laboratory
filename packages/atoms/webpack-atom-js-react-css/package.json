@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-atom-js-react-css",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1-beta.3",
   "description": "Ready to use webpack configuration, for React and CSS project",
   "keywords": [
     "react",

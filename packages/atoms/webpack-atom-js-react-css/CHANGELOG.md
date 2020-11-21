@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.3](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.2...@thc/webpack-atom-js-react-css@1.0.1-beta.3) (2020-11-21)
+
+
+### Bug Fixes
+
+* repairing polyfill ([8326340](https://github.com/thc-tools/webpack-laboratory/commit/832634079067d1f2281e421ce642d37c4d795d09))
+
+
+
+
+
 ## [1.0.1-beta.2](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.1...@thc/webpack-atom-js-react-css@1.0.1-beta.2) (2020-11-21)
 
 
