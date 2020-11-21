@@ -7,8 +7,8 @@ describe("The entry block", () => {
             config = handleEntries({
                 entries: {
                     main: "./src/app.js",
-                    polyfill: ["@babel/polyfill", /*Needed for Opera Mini*/ "whatwg-fetch"]
-                }
+                    polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
+                },
             })({}, {})();
         });
         it("should have setup polyfill entry", () => {

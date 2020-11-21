@@ -14,11 +14,7 @@ const generateSourcemap = require("@thc/webpack-quark-sourcemap");
 const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
 const enhanceForHotReload = (entries) => {
-    return [
-        "@thc/webpack-quark-dev-server/lib/react-hot-dev-client",
-        "react-error-overlay",
-        "webpack/hot/only-dev-server",
-    ].concat(entries);
+    return ["react-dev-utils/webpackHotDevClient"].concat(entries);
 };
 
 module.exports = (processEnv, argv) => {
@@ -51,17 +47,15 @@ module.exports = (processEnv, argv) => {
         handleCss({ extractCss: !hotReload }),
         handleAssets({ defaultsExclude: [/\.ejs$/, /\.jsx?$/, /\.css$/, /\.json$/] }),
         configEntries({
-            polyfill: ["@babel/polyfill", /*Needed for Opera Mini*/ "whatwg-fetch"],
-            entries: { main: "./src/app.js" },
+            polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
+            entries: { main: "./src/index.js" },
             enhance: hotReload ? enhanceForHotReload : false,
         }),
         addHotReload({
             hot: hotReload,
             serverConfig: {
-                __DEV_SERVER_PROTOCOL__: env.DEV_SERVER_PROTOCOL,
-                __DEV_SERVER_HOST__: env.DEV_SERVER_HOST,
-                __DEV_SERVER_PORT__: env.DEV_SERVER_PORT,
-                __DEV_SERVER_SUBDOMAIN__: env.DEV_SERVER_SUBDOMAIN,
+                DEV_SERVER_HOST: env.DEV_SERVER_HOST,
+                DEV_SERVER_PORT: env.DEV_SERVER_PORT,
             },
         }),
         addHtmlIndex(),
@@ -78,7 +72,7 @@ module.exports = (processEnv, argv) => {
             publicPath: env.OUTPUT_PUBLIC_PATH,
         }),
         generateSourcemap({
-            devtool: isProd ? "none" : "eval-cheap-source-map",
+            devtool: isProd ? "none" : "eval-cheap-module-source-map",
             test: /\.jsx?$/,
         })
     );
