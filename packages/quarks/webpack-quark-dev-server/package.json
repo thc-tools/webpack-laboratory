@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-dev-server",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1-beta.1",
   "description": "Basic webpack block to handle hot reload",
   "keywords": [
     "webpack",
