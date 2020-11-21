@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.4](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.3...@thc/webpack-atom-js-react-css@1.0.1-beta.4) (2020-11-21)
+
+
+### Bug Fixes
+
+* moving polyfill to peer deps ([d91b282](https://github.com/thc-tools/webpack-laboratory/commit/d91b282597958a66564606b8a832bceb63fda524))
+* repairing hot reload and dev-server ([92db5b2](https://github.com/thc-tools/webpack-laboratory/commit/92db5b2b5d0626aa7e8b31fcad8a8f02318afa15))
+
+
+
+
+
 ## [1.0.1-beta.3](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.2...@thc/webpack-atom-js-react-css@1.0.1-beta.3) (2020-11-21)
 
 
