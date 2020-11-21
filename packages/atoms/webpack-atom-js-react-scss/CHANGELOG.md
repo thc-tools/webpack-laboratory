@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.2](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.1...@thc/webpack-atom-js-react-scss@1.0.1-beta.2) (2020-11-21)
+
+
+### Features
+
+* updating babel preset ([c04572a](https://github.com/thc-tools/webpack-laboratory/commit/c04572a5af597ba14da21ff0a9edd3f0baf43bfa))
+
+
+
+
+
 ## [1.0.1-beta.1](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.0...@thc/webpack-atom-js-react-scss@1.0.1-beta.1) (2020-11-21)
 
 
