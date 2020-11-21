@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-atom-js-react-scss",
-  "version": "1.0.1-beta.4",
+  "version": "1.0.1-beta.5",
   "description": "Ready to use webpack configuration, for React and SCSS project",
   "keywords": [
     "react",
@@ -41,7 +41,7 @@
     "@thc/webpack-chemistry": "1.0.0",
     "@thc/webpack-quark-assets": "1.0.1-beta.0",
     "@thc/webpack-quark-babel": "1.0.1-beta.0",
-    "@thc/webpack-quark-dev-server": "1.0.1-beta.2",
+    "@thc/webpack-quark-dev-server": "1.0.1-beta.3",
     "@thc/webpack-quark-entry": "1.0.1-beta.1",
     "@thc/webpack-quark-html": "1.0.1-beta.1",
     "@thc/webpack-quark-misc": "1.0.1-beta.0",

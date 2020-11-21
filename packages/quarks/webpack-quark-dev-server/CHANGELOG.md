@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.3](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-dev-server@1.0.1-beta.2...@thc/webpack-quark-dev-server@1.0.1-beta.3) (2020-11-21)
+
+
+### Features
+
+* adding react refresh ([a896332](https://github.com/thc-tools/webpack-laboratory/commit/a896332bf3953e27ba5db363d1ee3270ddf629b5))
+
+
+
+
+
 ## [1.0.1-beta.2](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-dev-server@1.0.1-beta.1...@thc/webpack-quark-dev-server@1.0.1-beta.2) (2020-11-21)
 
 
