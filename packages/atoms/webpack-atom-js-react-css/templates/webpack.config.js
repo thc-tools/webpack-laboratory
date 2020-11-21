@@ -14,7 +14,7 @@ const generateSourcemap = require("@thc/webpack-quark-sourcemap");
 const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
 const enhanceForHotReload = (entries) => {
-    return ["react-dev-utils/webpackHotDevClient"].concat(entries);
+    return ["@thc/webpack-quark-dev-server/lib/webpackHotDevClient"].concat(entries);
 };
 
 module.exports = (processEnv, argv) => {

@@ -28,6 +28,7 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
         "process.env": {
             WDS_SOCKET_HOST: mergedConf.serverConfig.DEV_SERVER_HOST,
             WDS_SOCKET_PORT: +mergedConf.serverConfig.DEV_SERVER_PORT,
+            FAST_REFRESH: false,
         },
     };
 
