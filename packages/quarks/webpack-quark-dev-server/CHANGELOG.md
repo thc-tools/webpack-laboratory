@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.5](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-dev-server@1.0.1-beta.4...@thc/webpack-quark-dev-server@1.0.1-beta.5) (2020-11-22)
+
+
+### Bug Fixes
+
+* handling hot reload ([4f3faa2](https://github.com/thc-tools/webpack-laboratory/commit/4f3faa2baa9e92dfcf2346d425e4a5d9c2add547))
+
+
+
+
+
 ## [1.0.1-beta.4](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-dev-server@1.0.1-beta.3...@thc/webpack-quark-dev-server@1.0.1-beta.4) (2020-11-22)
 
 
