@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.9](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.8...@thc/webpack-atom-js-react-css@1.0.1-beta.9) (2020-11-22)
+
+**Note:** Version bump only for package @thc/webpack-atom-js-react-css
+
+
+
+
+
 ## [1.0.1-beta.8](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-css@1.0.1-beta.7...@thc/webpack-atom-js-react-css@1.0.1-beta.8) (2020-11-22)
 
 
