@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.2](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-optimize@1.0.1-beta.1...@thc/webpack-quark-optimize@1.0.1-beta.2) (2020-11-22)
+
+
+### Bug Fixes
+
+* downgrade terser ([de5ab9d](https://github.com/thc-tools/webpack-laboratory/commit/de5ab9d4091805dd8f6c72ae74dd26b2266ffd8c))
+
+
+
+
+
 ## [1.0.1-beta.1](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-optimize@1.0.1-beta.0...@thc/webpack-quark-optimize@1.0.1-beta.1) (2020-11-22)
 
 

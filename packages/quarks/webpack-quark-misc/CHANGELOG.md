@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.4](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-misc@1.0.1-beta.3...@thc/webpack-quark-misc@1.0.1-beta.4) (2020-11-22)
+
+**Note:** Version bump only for package @thc/webpack-quark-misc
+
+
+
+
+
 ## [1.0.1-beta.3](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-quark-misc@1.0.1-beta.2...@thc/webpack-quark-misc@1.0.1-beta.3) (2020-11-22)
 
 
