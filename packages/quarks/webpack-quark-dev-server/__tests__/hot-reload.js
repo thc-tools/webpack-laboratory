@@ -7,7 +7,7 @@ describe("The hot reload block", () => {
             config = handleHot()({}, {})();
         });
         it("should have setup plugins", () => {
-            expect(config.plugins.length).toBe(3);
+            expect(config.plugins.length).toBe(2);
         });
     });
     describe("when called with hot: false", () => {

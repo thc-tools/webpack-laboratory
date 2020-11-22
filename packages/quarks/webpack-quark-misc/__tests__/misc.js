@@ -13,7 +13,7 @@ describe("The misc block", () => {
             expect(config.stats).toBeDefined();
         });
         it("should have setup plugins", () => {
-            expect(config.plugins.length).toBe(1);
+            expect(config.plugins.length).toBe(2);
         });
     });
 });
