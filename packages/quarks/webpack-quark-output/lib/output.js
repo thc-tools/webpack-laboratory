@@ -28,7 +28,7 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
                 verbose: true,
                 dry: false,
                 cleanStaleWebpackAssets: true,
-                protectWebpackAssets: false,
+                protectWebpackAssets: true,
                 cleanOnceBeforeBuildPatterns: mergedConf.cleanup,
                 dangerouslyAllowCleanPatternsOutsideProject: true,
             })

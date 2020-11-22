@@ -24,6 +24,7 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
         },
         caseSensitivePaths: true,
         analyze: false,
+        dashboard: true,
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
