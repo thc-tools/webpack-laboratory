@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.8](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.7...@thc/webpack-atom-js-react-scss@1.0.1-beta.8) (2020-11-22)
+
+
+### Bug Fixes
+
+* repairing dev server ([64abf05](https://github.com/thc-tools/webpack-laboratory/commit/64abf05131ff7b5a7f01d42677b81d292f8da5a1))
+
+
+
+
+
 ## [1.0.1-beta.7](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.6...@thc/webpack-atom-js-react-scss@1.0.1-beta.7) (2020-11-22)
 
 

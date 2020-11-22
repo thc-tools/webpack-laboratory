@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-entry",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1-beta.3",
   "description": "Basic webpack block to handle entries",
   "keywords": [
     "thc-tools",
