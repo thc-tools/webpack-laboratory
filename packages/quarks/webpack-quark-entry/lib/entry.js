@@ -2,21 +2,17 @@
 
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
 
-module.exports = blockConfig => (processEnv, argv) => argConfig => {
+module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
-        entries: {}
+        entries: {},
     };
     const mergedConf = safeMerge(defaultConf, blockConfig);
     const config = ensureConfig(argConfig);
 
-    if (mergedConf.polyfill) {
-        config.entry.polyfill = mergedConf.polyfill;
-    }
-
-    const enhance = mergedConf.enhance ? mergedConf.enhance : elt => elt;
+    const enhance = mergedConf.enhance ? mergedConf.enhance : (elt) => elt;
 
     for (let key in mergedConf.entries) {
-        config.entry[key] = enhance(mergedConf.entries[key]);
+        config.entry[key] = enhance((config.entry.polyfill || []).concat(mergedConf.entries[key]));
     }
 
     return config;

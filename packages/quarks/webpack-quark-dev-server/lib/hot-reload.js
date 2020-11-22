@@ -21,7 +21,6 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const config = ensureConfig(argConfig);
 
     if (mergedConf.hot) {
-        config.resolve.alias["react-dom"] = "@hot-loader/react-dom";
         const serveOptions = {
             hmr: "refresh-on-failure",
             open: mergedConf.open,
@@ -36,7 +35,6 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
             historyFallback: true,
         };
 
-        config.plugins.push(new webpack.HotModuleReplacementPlugin());
         config.plugins.push(
             new ReactRefreshWebpackPlugin({
                 overlay: {

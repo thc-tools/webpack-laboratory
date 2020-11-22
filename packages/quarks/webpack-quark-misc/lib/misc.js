@@ -3,8 +3,9 @@
 const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard/plugin");
 
-module.exports = blockConfig => (processEnv, argv) => argConfig => {
+module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
         ignored: /node_modules/,
         stats: {
@@ -19,10 +20,10 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
             source: false,
             errors: true,
             errorDetails: true,
-            warnings: true
+            warnings: true,
         },
         caseSensitivePaths: true,
-        analyze: false
+        analyze: false,
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
@@ -33,6 +34,10 @@ module.exports = blockConfig => (processEnv, argv) => argConfig => {
 
     if (mergedConf.caseSensitivePaths) {
         config.plugins.push(new CaseSensitivePathsPlugin());
+    }
+
+    if (mergedConf.dashboard) {
+        config.plugins.push(new DashboardPlugin());
     }
 
     if (mergedConf.analyze) {
