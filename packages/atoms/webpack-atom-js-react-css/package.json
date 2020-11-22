@@ -37,7 +37,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@thc/babel-preset-react": "1.1.0-alpha.6",
+    "@thc/babel-preset-react": "1.1.0-beta.0",
     "@thc/webpack-chemistry": "1.0.1-beta.0",
     "@thc/webpack-quark-assets": "1.0.1-beta.1",
     "@thc/webpack-quark-babel": "1.0.1-beta.1",
