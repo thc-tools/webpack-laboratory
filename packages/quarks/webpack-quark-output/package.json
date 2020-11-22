@@ -1,6 +1,6 @@
 {
   "name": "@thc/webpack-quark-output",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1-beta.1",
   "description": "Basic webpack block to handle ouput from webpack",
   "keywords": [
     "webpack",
@@ -32,7 +32,7 @@
     "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "dependencies": {
-    "@thc/webpack-chemistry": "1.0.0",
+    "@thc/webpack-chemistry": "1.0.1-beta.0",
     "clean-webpack-plugin": "3.0.0"
   },
   "peerDependencies": {

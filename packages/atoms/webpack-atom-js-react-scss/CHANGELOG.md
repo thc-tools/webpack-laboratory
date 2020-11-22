@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1-beta.6](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.5...@thc/webpack-atom-js-react-scss@1.0.1-beta.6) (2020-11-22)
+
+
+### Bug Fixes
+
+* reverting to webpack 4 ([43014ff](https://github.com/thc-tools/webpack-laboratory/commit/43014ff414974067a60abf7733fff2444f244dc5))
+
+
+
+
+
 ## [1.0.1-beta.5](https://github.com/thc-tools/webpack-laboratory/compare/@thc/webpack-atom-js-react-scss@1.0.1-beta.4...@thc/webpack-atom-js-react-scss@1.0.1-beta.5) (2020-11-21)
 
 **Note:** Version bump only for package @thc/webpack-atom-js-react-scss
