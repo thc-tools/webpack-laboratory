@@ -11,9 +11,10 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
         hot: true,
         host: "localhost",
-        port: 300,
+        port: 3000,
         ramdisk: false,
         static: "./dist",
+        open: true,
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
@@ -23,9 +24,9 @@ module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
         config.resolve.alias["react-dom"] = "@hot-loader/react-dom";
         const serveOptions = {
             hmr: "refresh-on-failure",
-            open: true,
+            open: mergedConf.open,
             host: mergedConf.host,
-            port: mergedConf.post,
+            port: mergedConf.port,
             ramdisk: mergedConf.ramdisk,
             static: path.resolve(process.cwd(), mergedConf.static),
             status: true,

@@ -13,6 +13,10 @@ const generateSourcemap = require("@thc/webpack-quark-sourcemap");
 
 const { envDefaults, createConfigurator } = require("@thc/webpack-chemistry");
 
+const enhanceForHotReload = (entries) => {
+    return ["webpack-plugin-serve/client"].concat(entries);
+};
+
 module.exports = (processEnv, argv) => {
     const env = envDefaults(processEnv);
     // Every function accepts a config object
@@ -44,13 +48,13 @@ module.exports = (processEnv, argv) => {
         handleAssets({ defaultsExclude: [/\.ejs$/, /\.jsx?$/, /\.s?css$/, /\.json$/] }),
         configEntries({
             polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
-            entries: { main: "./src/app.js" },
-            enhance: false,
+            entries: { main: ["./src/index.js"] },
+            enhance: hotReload ? enhanceForHotReload : false,
         }),
         addHotReload({
             hot: hotReload,
             host: env.DEV_SERVER_HOST,
-            port: env.DEV_SERVER_PORT,
+            port: +env.DEV_SERVER_PORT,
             static: env.OUTPUT_DIR,
         }),
         addHtmlIndex(),
