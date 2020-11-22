@@ -6,7 +6,7 @@
  * @param {Object} config a webpack config, can be null, partial, or empty
  * @returns {Object} an object, with missing properties initialized
  */
-const ensureConfig = config => {
+const ensureConfig = (config) => {
     let builtConf = config || {};
     builtConf.output = builtConf.output || {};
     builtConf.entry = builtConf.entry || {};
@@ -16,6 +16,7 @@ const ensureConfig = config => {
     builtConf.optimization.minimizer = builtConf.optimization.minimizer || [];
     builtConf.resolve = builtConf.resolve || {};
     builtConf.resolve.extensions = builtConf.resolve.extensions || [];
+    builtConf.resolve.alias = builtConf.resolve.alias || {};
     builtConf.module = builtConf.module || {};
     builtConf.module.rules = builtConf.module.rules || [];
     builtConf.plugins = builtConf.plugins || [];

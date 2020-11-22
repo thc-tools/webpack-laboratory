@@ -1,45 +1,50 @@
 "use strict";
 
-const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
+const path = require("path");
 const webpack = require("webpack");
+
+const { ensureConfig, safeMerge } = require("@thc/webpack-chemistry");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const { WebpackPluginServe: Serve } = require("webpack-plugin-serve");
 
 module.exports = (blockConfig) => (processEnv, argv) => (argConfig) => {
     const defaultConf = {
         hot: true,
-        serverConfig: {},
-    };
-
-    const defaultServerConf = {
-        DEV_SERVER_HOST: "localhost",
-        DEV_SERVER_PORT: 3000,
+        host: "localhost",
+        port: 300,
+        ramdisk: false,
+        static: "./dist",
     };
 
     const mergedConf = safeMerge(defaultConf, blockConfig);
-    mergedConf.serverConfig = safeMerge(defaultServerConf, mergedConf.serverConfig);
-    // If someone use custom config, we need to avoid stringify
-    // Or maybe stringify for them ? to see (integer needs to remain integer, so cannot stringify the whole object)
-
-    if (mergedConf.serverConfig.DEV_SERVER_HOST !== undefined) {
-        mergedConf.serverConfig.DEV_SERVER_HOST = JSON.stringify(mergedConf.serverConfig.DEV_SERVER_HOST);
-    }
-
-    const defineConfig = {
-        "process.platform": '"Unknown"',
-        "process.env": {
-            WDS_SOCKET_HOST: mergedConf.serverConfig.DEV_SERVER_HOST,
-            WDS_SOCKET_PORT: +mergedConf.serverConfig.DEV_SERVER_PORT,
-            FAST_REFRESH: true,
-        },
-    };
-
     const config = ensureConfig(argConfig);
 
     if (mergedConf.hot) {
+        config.resolve.alias["react-dom"] = "@hot-loader/react-dom";
+        const serveOptions = {
+            hmr: "refresh-on-failure",
+            open: true,
+            host: mergedConf.host,
+            port: mergedConf.post,
+            ramdisk: mergedConf.ramdisk,
+            static: path.resolve(process.cwd(), mergedConf.static),
+            status: true,
+            client: {
+                retry: true,
+            },
+            historyFallback: true,
+        };
+
         config.plugins.push(new webpack.HotModuleReplacementPlugin());
-        config.plugins.push(new ReactRefreshWebpackPlugin());
+        config.plugins.push(
+            new ReactRefreshWebpackPlugin({
+                overlay: {
+                    sockIntegration: "wps",
+                },
+            })
+        );
+        config.plugins.push(new Serve(serveOptions));
     }
-    config.plugins.push(new webpack.DefinePlugin(defineConfig));
 
     return config;
 };
