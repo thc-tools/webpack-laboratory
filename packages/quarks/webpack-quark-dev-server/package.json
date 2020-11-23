@@ -37,6 +37,6 @@
     "webpack-plugin-serve": "1.2.0"
   },
   "peerDependencies": {
-    "webpack": "^4.44.2"
+    "webpack": "^4.44.2 || ^5.0.0"
   }
 }
