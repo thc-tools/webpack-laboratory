@@ -32,7 +32,7 @@
     "url": "https://github.com/thc-tools/webpack-laboratory/issues"
   },
   "dependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.10",
     "@thc/webpack-chemistry": "1.0.1-beta.0",
     "webpack-plugin-serve": "1.2.0"
   },
