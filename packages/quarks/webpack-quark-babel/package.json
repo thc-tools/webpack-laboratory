@@ -38,6 +38,6 @@
     "@thc/webpack-chemistry": "1.0.1-beta.0",
     "babel-loader": "8.2.1",
     "cache-loader": "4.1.0",
-    "thread-loader": "3.0.1"
+    "thread-loader": "4.0.2"
   }
 }
