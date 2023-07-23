@@ -56,6 +56,6 @@
     "postcss-normalize": "9.0.0",
     "postcss-preset-env": "6.7.0",
     "webpack": "4.44.2",
-    "webpack-cli": "4.2.0"
+    "webpack-cli": "5.1.4"
   }
 }
