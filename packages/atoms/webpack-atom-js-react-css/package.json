@@ -46,7 +46,7 @@
     "@thc/webpack-quark-entry": "1.0.1-beta.3",
     "@thc/webpack-quark-html": "1.0.1-beta.2",
     "@thc/webpack-quark-misc": "1.0.1-beta.4",
-    "@thc/webpack-quark-optimize": "1.0.1-beta.2",
+    "@thc/webpack-quark-optimize": "1.0.1",
     "@thc/webpack-quark-output": "1.0.1-beta.2",
     "@thc/webpack-quark-sourcemap": "1.0.1-beta.1",
     "cssnano": "4.1.10",
