@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@thc/webpack-chemistry": "1.0.1-beta.0",
-    "@thc/webpack-quark-babel": "1.0.1-beta.1",
+    "@thc/webpack-quark-babel": "1.0.1",
     "@typescript-eslint/eslint-plugin": "4.8.1",
     "@typescript-eslint/parser": "4.8.1",
     "eslint": "7.14.0",
